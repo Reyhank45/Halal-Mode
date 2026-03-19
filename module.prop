@@ -1,6 +1,6 @@
 id=halal_mode_haram_blocker
 name=Halal Mode - DNS & Firewall Protector
-version=v1.1
+version=v1.2
 versionCode=1
 author=Reyhank45
 description=Blocks adult/haram content using DNS hosts file and iptables rules

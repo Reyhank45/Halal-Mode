@@ -1,5 +1,7 @@
 # Halal Mode - DNS & Firewall Protector
 
+Are you tried of Procrastination??, hold no more. Low and behold
+
 A Magisk module that blocks adult/haram content using DNS hosts file and network firewall rules.
 
 Features:
@@ -12,7 +14,7 @@ Features:
 
 ## Quick Start
 
-### Development: Add Domains to Blocklist
+### Development and Contributing: Add Domains to Blocklist
 ```bash
 python3 add_blocker.py -d instagram.com tiktok.com
 python3 add_blocker.py -d badsite.com -id id              # With country code
@@ -29,7 +31,7 @@ su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh example.com
 
 ## Installation
 
-1. **Build module**: `make` (creates `build/halal_mode_haram_blocker-v1.0.zip`)  
+1. **Build module**: `make` (creates `build/halal_mode_haram_blocker-<version>.zip`)  
 2. **Flash in Magisk Manager** or use ADB to push files
 3. **Reboot** - Rules load automatically
 
@@ -38,7 +40,6 @@ su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh example.com
 ## Module Information
 
 - **ID**: `halal_mode_haram_blocker`
-- **Version**: v1.0
 - **Type**: System blocklist + Network firewall
 - **Blocklist size**: 169K+ domains
 - **System files modified**: `/system/etc/hosts`
@@ -147,7 +148,7 @@ su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --ip urgent-b
 
 ## How It Works
 
-1. **Hosts file blocking**: Redirects DNS requests to 127.0.0.1 (localhost)
+1. **Hosts file blocking**: Redirects DNS requests to 127.0.0.1 (localhost) and 0.0.0.0
 2. **Firewall blocking**: iptables REJECT rules for additional network protection
 3. **Rule persistence**: service.sh loads rules automatically at boot
 
@@ -164,7 +165,7 @@ su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --ip urgent-b
 ## Notes
 
 - ⚠️ Module requires Magisk or KSU
-- ⚠️ Device must support iptables
+- ⚠️ iptables Executable must be present on the device
 - ✅ Module structure allows easy updates to blocklist
 - ✅ Both development and runtime tools included
 
