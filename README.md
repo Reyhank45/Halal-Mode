@@ -136,7 +136,11 @@ python3 add_blocker.py --show 50       # Last 50 entries
 
 ### Emergency Block on Device
 ```bash
+# Default (Both hosts + iptables):
 su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh urgent-block.com
+
+# Firewall only:
+su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --ip urgent-block.com
 ```
 
 ---

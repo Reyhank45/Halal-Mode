@@ -3,10 +3,13 @@
 Halal Mode - Hosts Database Manager
 Development tool to add domains to the project's hosts blocklist.
 Automatically adds both domain.com and www.domain.com variants.
+Resolves domains to IPs and adds persistent iptables rules.
 """
 
 import sys
 import argparse
+import socket
+import subprocess
 from pathlib import Path
 
 
@@ -185,6 +188,86 @@ class HostsManager:
         except Exception as e:
             print(f"✗ Error writing to hosts file: {e}", file=sys.stderr)
             return 0
+
+    def is_ip_address(self, s):
+        """Check if string is a valid IPv4 address"""
+        try:
+            socket.inet_aton(s)
+            return True
+        except (socket.error, TypeError):
+            return False
+
+    def add_iptables_rule(self, domain):
+        """
+        Resolve domain to IP (or use directly if already an IP) and add rule to service.sh
+        """
+        try:
+            # Check if input is already an IP
+            if self.is_ip_address(domain):
+                ips = {domain}
+            else:
+                # Resolve IPs (IPv4 only)
+                ips = set()
+                try:
+                    addr_info = socket.getaddrinfo(domain, None, socket.AF_INET)
+                    for info in addr_info:
+                        ip = info[4][0]
+                        # Filter out loopback and null IPs
+                        if ip not in ('0.0.0.0', '127.0.0.1'):
+                            ips.add(ip)
+                except socket.gaierror:
+                    return 0
+            
+            if not ips:
+                return 0
+
+            service_sh_path = self.script_dir / "common" / "service.sh"
+            if not service_sh_path.exists():
+                print(f"⚠️  Warning: service.sh not found at {service_sh_path}")
+                return 0
+
+            with open(service_sh_path, 'r') as f:
+                content = f.read()
+
+            new_rules = []
+            for ip in ips:
+                # Define rules for comprehensive blocking
+                # OUTPUT: blocks outgoing to site
+                # INPUT: blocks incoming from site
+                # FORWARD: blocks tethered devices from/to site
+                rules = [
+                    f"iptables -A OUTPUT -d {ip} -j REJECT # Block {domain}",
+                    f"iptables -A INPUT -s {ip} -j REJECT # Block {domain}",
+                    f"iptables -A FORWARD -d {ip} -j REJECT # Block {domain}",
+                    f"iptables -A FORWARD -s {ip} -j REJECT # Block {domain}"
+                ]
+                
+                for rule in rules:
+                    if rule not in content:
+                        new_rules.append(rule)
+                    else:
+                        rule_type = rule.split()[2]  # Get chain name
+                        print(f"ℹ  Firewall rule ({rule_type}) for {ip} already in service.sh")
+
+            if not new_rules:
+                return 0
+
+            # Insert before marker
+            marker = "# --- Persistent iptables Rules End ---"
+            if marker in content:
+                updated_content = content.replace(marker, "\n".join(new_rules) + "\n" + marker)
+                with open(service_sh_path, 'w') as f:
+                    f.write(updated_content)
+                for rule in new_rules:
+                    print(f"✓ Added firewall rule for {domain} ({rule.split()[4]})")
+                return len(new_rules)
+            else:
+                print(f"⚠️  Warning: Marker '{marker}' not found in service.sh")
+                return 0
+
+        except Exception as e:
+            print(f"✗ Error adding firewall rules for {domain}: {e}", file=sys.stderr)
+            return 0
     
     def list_recent_entries(self, count=10):
         """
@@ -220,20 +303,20 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Add a single domain (adds both example.com and www.example.com)
-  python3 add_blocker.py -d example.com
+  # Add a single domain or IP (adds both example.com and www.example.com)
+  python3 add_blocker.py example.com
 
-  # Add multiple domains
-  python3 add_blocker.py -d instagram.com tiktok.com facebook.com
+  # Add multiple domains/IPs
+  python3 add_blocker.py instagram.com tiktok.com 1.2.3.4
 
   # Add domain with country code prefix (adds id.example.com and www.id.example.com)
-  python3 add_blocker.py -d example.com -id id
+  python3 add_blocker.py example.com -id id
 
-  # Add multiple domains with country code prefix
-  python3 add_blocker.py -d badsite1.com badsite2.com -id id
+  # Add domain with firewall rules (resolves to IPs and adds to service.sh)
+  python3 add_blocker.py example.com --ip
 
-  # Add domain with ALL country code prefixes (warns: adds 498 entries)
-  python3 add_blocker.py -d example.com --all-countries
+  # Block a static IP directly via firewall
+  python3 add_blocker.py 66.29.129.161 --fw
 
   # Show last 20 entries in blocklist
   python3 add_blocker.py --show 20
@@ -241,17 +324,23 @@ Examples:
     )
     
     parser.add_argument('-d', '--domain', nargs='+', help='Domain(s) to add to blocklist')
+    parser.add_argument('pos_domain', nargs='*', help='Domain(s) or IP(s) to add to blocklist')
     parser.add_argument('-id', '--country-id', type=str, metavar='ID',
                         help='Alpha2 country code to prepend (e.g., id, us, uk)')
     parser.add_argument('--all-countries', action='store_true',
                         help='Add domain with ALL country codes (each domain = 498 entries)')
+    parser.add_argument('--ip', '--fw', action='store_true',
+                        help='Also add iptables firewall rules for these domains')
     parser.add_argument('--show', type=int, nargs='?', const=10, metavar='N',
                         help='Show last N entries from hosts file (default: 10)')
     
     args = parser.parse_args()
     
+    # Merge flagged and positional domains
+    domains = (args.domain or []) + args.pos_domain
+    
     # Validate arguments
-    if not args.domain and args.show is None:
+    if not domains and args.show is None:
         parser.print_help()
         sys.exit(1)
     
@@ -261,32 +350,44 @@ Examples:
     # Show recent entries if requested
     if args.show is not None:
         manager.list_recent_entries(args.show)
-        if args.domain:
+        if domains:
             print("\n" + "=" * 50)
     
     # Add domains
-    if args.domain:
+    if domains:
         print("Adding domains to hosts blocklist...")
         print("=" * 50)
         
         # Warn about --all-countries
         if args.all_countries:
-            total_variants = len(args.domain) * 498  # 249 countries * 2 (domain + www)
-            print(f"⚠️  WARNING: Adding ALL country codes for {len(args.domain)} domain(s)")
+            total_variants = len(domains) * 498  # 249 countries * 2 (domain + www)
+            print(f"⚠️  WARNING: Adding ALL country codes for {len(domains)} domain(s)")
             print(f"⚠️  This will add {total_variants} entries total")
             print()
         
         total_added = 0
-        for domain in args.domain:
+        total_fw_added = 0
+        for domain in domains:
+            # Add to hosts file
             count = manager.add_to_hosts(domain, args.country_id, args.all_countries)
             total_added += count
+            
+            # Add firewall rules if requested
+            if args.ip:
+                variants = manager.get_domain_variants(domain, args.country_id, args.all_countries)
+                for variant in variants:
+                    fw_count = manager.add_iptables_rule(variant)
+                    total_fw_added += fw_count
         
-        if total_added > 0:
+        if total_added > 0 or total_fw_added > 0:
             print("\n" + "=" * 50)
-            print(f"✓ Successfully added {total_added} entries to hosts file")
+            if total_added > 0:
+                print(f"✓ Successfully added {total_added} entries to hosts file")
+            if total_fw_added > 0:
+                print(f"✓ Successfully added {total_fw_added} firewall rules to service.sh")
         else:
             print("\n" + "=" * 50)
-            print("ℹ  No new entries were added (all duplicates)")
+            print("ℹ  No new entries were added (all duplicates or resolution failed)")
 
 
 if __name__ == '__main__':

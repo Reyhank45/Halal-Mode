@@ -45,20 +45,34 @@ python3 add_blocker.py --show 20
 **Task**: Adds DNS and firewall rules for immediate blocking
 
 ### Features
-- **DNS blocking**: Adds entries to `/system/etc/hosts`
-- **Firewall blocking**: Adds iptables REJECT rules  
-- **Auto persistence**: Rules saved for boot-time loading
-- **Domain resolution**: Resolves domains to IPs automatically
-- **No extra dependencies**: Uses standard Android tools
+- **DNS blocking**: Adds entries to `/system/etc/hosts` and persistent module hosts
+- **Firewall blocking**: Adds iptables REJECT rules (optional via flags)
+- **Auto persistence**: Firewall rules saved to `service.sh` for boot loading
+- **Domain resolution**: Resolves domains to IPs automatically for firewall rules
+- **Flexible flags**: Choose between hosts blocking, firewall blocking, or both
+
+### Flags
+| Flag | Short | Purpose |
+|------|-------|---------|
+| `--ip` | `--fw` | Add iptables rules (firewall) |
+| `--hosts` | `-` | Add hosts file entries |
+| `--all` | `-` | Add both (default behavior) |
+| `--help` | `-h` | Show help and usage |
 
 ### Usage on Device
 
 ```bash
-# Run on rooted Android:
+# Default (adds both hosts and firewall rules):
 su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh example.com
 
-# Block multiple domains:
-su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh site1.com site2.com
+# Firewall block ONLY (iptables):
+su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --ip example.com
+
+# Hosts block ONLY:
+su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --hosts example.com
+
+# Block multiple domains with specific flags:
+su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --hosts site1.com site2.com
 ```
 
 ---
@@ -140,6 +154,22 @@ Rules persisted to service.sh (survive reboot)
 ├── common/service.sh               ← Boot-time rules
 ├── common/scripts/add_block.sh     ← Dynamic blocking
 └── system/etc/hosts                ← Active blocklist
+
+---
+
+## Static IP Support
+
+Both tools support blocking IP addresses directly. This bypasses DNS resolution and is useful for blocking known malicious servers.
+
+### On PC (add_blocker.py)
+```bash
+python3 add_blocker.py -d 8.8.8.8 --ip
+```
+
+### On Device (add_block.sh)
+```bash
+su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --ip 8.8.8.8
+```
 ```
 
 ---
