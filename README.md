@@ -162,6 +162,14 @@ su -c /magisk/halal_mode_haram_blocker/common/scripts/add_block.sh --ip urgent-b
 
 ---
 
+## Goals / To do list
+
+- ⚪ An option to install this permanently <- super useful
+- ⚪ An option to install open source Islamic app (optional)
+- ⚪ Smart Blocking engine without using large database
+
+---
+
 ## Notes
 
 - ⚠️ Module requires Magisk or KSU
