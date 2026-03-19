@@ -1,4 +1,12 @@
 #!/system/bin/sh
+# Halal Mode - Add Domain Blocking Script
+# Resolves domains and adds iptables rules to block them
+# Usage: add_block.sh <domain1> [domain2] ...
+#
+# This script will:
+# 1. Resolve domain names to IP addresses
+# 2. Add iptables REJECT rules for those IPs
+# 3. Persist rules to service.sh for boot-time loading
 
 if [ -z "$1" ]; then
     echo "Usage: $0 <domain1> [domain2] ..."

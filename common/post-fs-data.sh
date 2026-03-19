@@ -1,7 +1,6 @@
 #!/system/bin/sh
-# Please don't hardcode /magisk/modname/... ; instead, please use $MODDIR/...
-# This will make your scripts compatible even if Magisk change its mount point in the future
-MODDIR=${0%/*}
+# Halal Mode - Post FS-Data Script
+# Note: This script is currently disabled (POSTFSDATA=false in config.sh)
+# Uncomment in config.sh if early initialization is needed
 
-# This script will be executed in post-fs-data mode
-# More info in the main Magisk thread
+MODDIR=${0%/*}
