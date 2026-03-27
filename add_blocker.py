@@ -10,6 +10,7 @@ import sys
 import argparse
 import socket
 import subprocess
+import re
 from pathlib import Path
 
 
@@ -279,22 +280,80 @@ class HostsManager:
         try:
             with open(self.hosts_path, 'r') as f:
                 lines = f.readlines()
-            
+
             # Filter out comments and empty lines
             entries = [line.strip() for line in lines if line.strip() and not line.startswith('#')]
-            
+
             if not entries:
                 print("No entries in hosts file yet (except comments)")
                 return
-            
+
             print(f"\nLast {min(count, len(entries))} entries in hosts file:")
             print("=" * 50)
             for entry in entries[-count:]:
                 print(entry)
             print(f"\nTotal entries: {len(entries)}")
-            
+
         except Exception as e:
             print(f"Error reading hosts file: {e}", file=sys.stderr)
+
+
+def increment_version(version_str):
+    """Return incremented version with -qfwb-XXXX suffix."""
+    version_str = version_str.strip()
+
+    m = re.match(r'^(v?[0-9]+(?:\.[0-9]+)*)(?:-qfwb-(\d+))?$', version_str)
+    if not m:
+        # Fallback: just append qfwb-0001
+        return f"{version_str}-qfwb-0001"
+
+    base = m.group(1)
+    suffix = m.group(2)
+
+    if suffix is None:
+        count = 1
+    else:
+        count = int(suffix) + 1
+
+    return f"{base}-qfwb-{count:04d}"
+
+
+def bump_project_version():
+    """Update version file and module.prop with incremented -qfwb-XXXX version, and bump versionCode."""
+    base_dir = Path(__file__).parent
+    version_path = base_dir / 'version'
+    module_prop_path = base_dir / 'module.prop'
+
+    if not version_path.exists() or not module_prop_path.exists():
+        return None
+
+    current_version = version_path.read_text().strip()
+    if not current_version:
+        return None
+
+    new_version = increment_version(current_version)
+    version_path.write_text(new_version + "\n")
+
+    module_prop_data = module_prop_path.read_text()
+
+    # Update version string
+    module_prop_data = re.sub(r'^version=.*$', f'version={new_version}', module_prop_data, flags=re.M)
+
+    # Update versionCode integer if present; otherwise, add it after version.
+    version_code_match = re.search(r'^versionCode=(\d+)$', module_prop_data, flags=re.M)
+    if version_code_match:
+        current_code = int(version_code_match.group(1))
+        next_code = current_code + 1
+        module_prop_data = re.sub(r'^versionCode=\d+$', f'versionCode={next_code}', module_prop_data, flags=re.M)
+        print(f"🔧 versionCode updated: {current_code} -> {next_code}")
+    else:
+        module_prop_data = re.sub(r'(^version=.*$)', r"\1\nversionCode=2", module_prop_data, flags=re.M)
+        print("🔧 versionCode added: 2")
+
+    module_prop_path.write_text(module_prop_data)
+
+    print(f"🔧 Version updated: {current_version} -> {new_version}")
+    return new_version
 
 
 def main():
@@ -388,6 +447,11 @@ Examples:
         else:
             print("\n" + "=" * 50)
             print("ℹ  No new entries were added (all duplicates or resolution failed)")
+
+        # Bump version on each add_blocker invocation with domain arguments
+        bumped_version = bump_project_version()
+        if bumped_version:
+            print(f"✅ New module version: {bumped_version}")
 
 
 if __name__ == '__main__':
