@@ -5,6 +5,7 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch: # Allows manual triggers
 
 jobs:
   build:
@@ -21,47 +22,51 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update -y
+          sudo apt-get update
           sudo apt-get install -y zip
 
       - name: Validate Python scripts
-        run: |
-          python -m py_compile add_blocker.py
+        run: python -m py_compile add_blocker.py
 
       - name: Build module with Makefile
         run: make
 
       - name: Generate update metadata
         run: |
-          id=$(grep '^id=' module.prop | cut -d= -f2)
-          name=$(grep '^name=' module.prop | cut -d= -f2)
-          version=$(grep '^version=' module.prop | cut -d= -f2)
-          versionCode=$(grep '^versionCode=' module.prop | cut -d= -f2)
-          description=$(grep '^description=' module.prop | cut -d= -f2)
-          author=$(grep '^author=' module.prop | cut -d= -f2)
-          downloadUrl="https://github.com/${GITHUB_REPOSITORY}/releases/latest/download/${id}-${version}.zip"
+          # Use 'sed' to extract values to handle potential spaces more gracefully than 'cut'
+          MOD_ID=$(grep '^id=' module.prop | sed 's/^id=//')
+          MOD_NAME=$(grep '^name=' module.prop | sed 's/^name=//')
+          MOD_VER=$(grep '^version=' module.prop | sed 's/^version=//')
+          MOD_VER_CODE=$(grep '^versionCode=' module.prop | sed 's/^versionCode=//')
+          MOD_DESC=$(grep '^description=' module.prop | sed 's/^description=//')
+          MOD_AUTH=$(grep '^author=' module.prop | sed 's/^author=//')
+          
+          DOWNLOAD_URL="https://github.com/${{ github.repository }}/releases/latest/download/${MOD_ID}-${MOD_VER}.zip"
 
+          # Use a heredoc with quoted EOF to prevent shell expansion issues inside the JSON
           cat > update.json <<EOF
-{
-  "id": "${id}",
-  "name": "${name}",
-  "version": "${version}",
-  "versionCode": ${versionCode},
-  "description": "${description}",
-  "author": "${author}",
-  "downloadUrl": "${downloadUrl}",
-  "website": "https://github.com/${GITHUB_REPOSITORY}"
-}
-EOF
+          {
+            "id": "${MOD_ID}",
+            "name": "${MOD_NAME}",
+            "version": "${MOD_VER}",
+            "versionCode": ${MOD_VER_CODE},
+            "description": "${MOD_DESC}",
+            "author": "${MOD_AUTH}",
+            "downloadUrl": "${DOWNLOAD_URL}",
+            "website": "https://github.com/${{ github.repository }}"
+          }
+          EOF
 
       - name: List build output
-        run: ls -la build
+        run: ls -R build/
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: halal-mode-module
+          # Ensure this path matches exactly where your Makefile puts the zip
           path: build/*.zip
+          if-no-files-found: error
 
       - name: Upload update metadata as artifact
         uses: actions/upload-artifact@v4
