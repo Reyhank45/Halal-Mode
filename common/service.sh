@@ -134,4 +134,16 @@ iptables -A OUTPUT -d 164.92.247.92 -j REJECT # Block 164.92.247.92
 iptables -A INPUT -s 164.92.247.92 -j REJECT # Block 164.92.247.92
 iptables -A FORWARD -d 164.92.247.92 -j REJECT # Block 164.92.247.92
 iptables -A FORWARD -s 164.92.247.92 -j REJECT # Block 164.92.247.92
+iptables -A OUTPUT -d 51.75.156.66 -j REJECT # Block 51.75.156.66
+iptables -A INPUT -s 51.75.156.66 -j REJECT # Block 51.75.156.66
+iptables -A FORWARD -d 51.75.156.66 -j REJECT # Block 51.75.156.66
+iptables -A FORWARD -s 51.75.156.66 -j REJECT # Block 51.75.156.66
+iptables -A OUTPUT -d 2.58.80.21 -j REJECT # Block 2.58.80.21
+iptables -A INPUT -s 2.58.80.21 -j REJECT # Block 2.58.80.21
+iptables -A FORWARD -d 2.58.80.21 -j REJECT # Block 2.58.80.21
+iptables -A FORWARD -s 2.58.80.21 -j REJECT # Block 2.58.80.21
+iptables -A OUTPUT -d 185.2.100.235 -j REJECT # Block 185.2.100.235
+iptables -A INPUT -s 185.2.100.235 -j REJECT # Block 185.2.100.235
+iptables -A FORWARD -d 185.2.100.235 -j REJECT # Block 185.2.100.235
+iptables -A FORWARD -s 185.2.100.235 -j REJECT # Block 185.2.100.235
 # --- Persistent iptables Rules End ---

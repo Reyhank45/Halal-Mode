@@ -1,7 +1,7 @@
 MODID := $(shell grep 'id=' module.prop | cut -d= -f2)
 VERSION := $(shell cat version)
 ZIP_NAME := $(MODID)-$(VERSION).zip
-BUILD_DIR := build
+BUILD_DIR := ../build
 
 FILES := module.prop config.sh system common META-INF action.sh
 

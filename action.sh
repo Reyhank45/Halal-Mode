@@ -30,7 +30,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Find the built zip
-ZIP_FILE=$(ls build/*.zip | head -n 1)
+ZIP_FILE=$(ls ../build/*.zip | head -n 1)
 
 if [ -f "$ZIP_FILE" ]; then
     # Install the module via magisk
