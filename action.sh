@@ -13,7 +13,7 @@ mkdir -p $TMP_DIR
 
 echo "Downloading latest source from GitHub main branch..."
 ZIP_FILE=$TMP_DIR/main.zip
-URL="https://github.com/Reyhank45/Halal-Mode/archive/refs/heads/main.zip"
+URL="https://github.com/Reyhank45/Halal-Mode/archive/refs/heads/main.zip?t=$RANDOM"
 
 curl -sL "$URL" -o $ZIP_FILE || wget -qO $ZIP_FILE "$URL"
 

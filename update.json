@@ -1,9 +1,9 @@
 {
   "id": "halal_mode_haram_blocker",
   "name": "Halal Mode - DNS & Firewall Protector",
-  "version": "v1.2",
-  "versionCode": 1,
-  "description": "Blocks adult/haram content using DNS hosts file and iptables rules",
+  "version": "v1.3-qfwb-0001",
+  "versionCode": 46,
+  "description": "Blocks adult/haram content using DNS hosts file and iptables rules. To update click the Action button.",
   "author": "Reyhank45",
   "downloadUrl": "https://github.com/Reyhank45/Halal-Mode/releases/latest/download/halal_mode_haram_blocker-v1.2.zip",
   "website": "https://github.com/Reyhank45/Halal-Mode"
