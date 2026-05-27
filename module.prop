@@ -1,6 +1,6 @@
 id=halal_mode_haram_blocker
 name=Halal Mode - DNS & Firewall Protector
-version=v1.2-qfwb-0043
+version=v1.3-qfwb-0001
 versionCode=44
 updateJson=https://raw.githubusercontent.com/Reyhank45/Halal-Mode/main/update.json
 author=Reyhank45
