@@ -173095,7 +173095,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 axis.m.facebook.com
 0.0.0.0 az-az.facebook.com
 0.0.0.0 b-api.facebook.com
-0.0.0.0 b-graph.facebook.com
+# 0.0.0.0 b-graph.facebook.com
 0.0.0.0 b-m.facebook.com
 0.0.0.0 b-www.facebook.com
 0.0.0.0 b.ns.facebook.com
@@ -173637,7 +173637,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 govtech.m.facebook.com
 0.0.0.0 govtrequests.facebook.com
 0.0.0.0 graph-video.facebook.com
-0.0.0.0 graph.facebook.com
+# 0.0.0.0 graph.facebook.com
 0.0.0.0 grupoboticario.m.facebook.com
 0.0.0.0 h-ct-m-fbx.fbsbx.com.online-metrix.net
 0.0.0.0 h.beta.facebook.com
@@ -174245,7 +174245,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.facebook.us
 0.0.0.0 www.fbcdn.com
 0.0.0.0 www.fbcdn.net
-0.0.0.0 www.graph.facebook.com
+# 0.0.0.0 www.graph.facebook.com
 0.0.0.0 www.login.facebook.com
 0.0.0.0 www.prod.facebook.com
 0.0.0.0 www.s-static.ak.facebook.com
@@ -174352,7 +174352,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 z-m-fbcdn-mini-shv-01-ord1.fbcdn.net
 0.0.0.0 z-m-fbcdn-shv-01-frt3.fbcdn.net
 0.0.0.0 z-m-gateway.facebook.com
-0.0.0.0 z-m-graph.facebook.com
+# 0.0.0.0 z-m-graph.facebook.com
 0.0.0.0 z-m-scontent-ams.xx.fbcdn.net
 0.0.0.0 z-m-scontent-amt.xx.fbcdn.net
 0.0.0.0 z-m-scontent-arn.xx.fbcdn.net
@@ -174476,14 +174476,14 @@ ff02::3 ip6-allhosts
 0.0.0.0 z-m.c10r.facebook.com
 0.0.0.0 z-m.facebook.com
 0.0.0.0 z-p1-api.facebook.com
-0.0.0.0 z-p1-graph.facebook.com
+# 0.0.0.0 z-p1-graph.facebook.com
 0.0.0.0 z-p1-upload.facebook.com
 0.0.0.0 z-p1.facebook.com
 0.0.0.0 z-p3-api.facebook.com
 0.0.0.0 z-p3-external.fmdc1-1.fna.fbcdn.net
 0.0.0.0 z-p3-external.fsdu11-1.fna.fbcdn.net
 0.0.0.0 z-p3-external.fsea1-1.fna.fbcdn.net
-0.0.0.0 z-p3-graph.facebook.com
+# 0.0.0.0 z-p3-graph.facebook.com
 0.0.0.0 z-p3-rupload.facebook.com
 0.0.0.0 z-p3-scontent-lax3-1.xx.fbcdn.net
 0.0.0.0 z-p3-scontent.facc1-1.fna.fbcdn.net
@@ -174514,7 +174514,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 z-p3-video.fsea1-1.fna.fbcdn.net
 0.0.0.0 z-p3.facebook.com
 0.0.0.0 z-p4-api.facebook.com
-0.0.0.0 z-p4-graph.facebook.com
+# 0.0.0.0 z-p4-graph.facebook.com
 0.0.0.0 z-p4-rupload.facebook.com
 0.0.0.0 z-p4-upload.facebook.com
 0.0.0.0 z-p4.facebook.com
