@@ -3,7 +3,7 @@ VERSION := $(shell cat version)
 ZIP_NAME := $(MODID)-$(VERSION).zip
 BUILD_DIR := build
 
-FILES := module.prop config.sh system common META-INF
+FILES := module.prop config.sh system common META-INF action.sh
 
 .PHONY: all clean update_version
 
