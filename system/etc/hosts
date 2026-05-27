@@ -2890,9 +2890,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 analytics.s3.amazonaws.com
 0.0.0.0 mediavisor.doubleclick.net
 0.0.0.0 adm.hotjar.com
-0.0.0.0 ads-api.tiktok.com
-0.0.0.0 ads-sg.tiktok.com
-0.0.0.0 analytics-sg.tiktok.com
+# 0.0.0.0 ads-api.tiktok.com
+# 0.0.0.0 ads-sg.tiktok.com
+# 0.0.0.0 analytics-sg.tiktok.com
 0.0.0.0 adtech.yahooinc.com
 0.0.0.0 adfstat.yandex.ru
 0.0.0.0 adfox.yandex.ru
@@ -2986,7 +2986,7 @@ ff02::3 ip6-allhosts
 # Added January 21, 2026
 0.0.0.0 privacy-sandbox.appsflyersdk.com
 0.0.0.0 api16-dual-event-sg2.pangle.io
-0.0.0.0 api16-access-ttp.tiktokpangle.us
+# 0.0.0.0 api16-access-ttp.tiktokpangle.us
 0.0.0.0 api16-access-wf-sg.pangle.io
 0.0.0.0 prod-mediate-events.applovin.com
 
@@ -13202,12 +13202,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 trk.tidaltv.com
 
 # [tiktok.com]
-0.0.0.0 analytics.tiktok.com
+# 0.0.0.0 analytics.tiktok.com
 
 # [tiktokv.com]
-0.0.0.0 log-va.tiktokv.com
-0.0.0.0 mon.tiktokv.com
-0.0.0.0 mon-va.tiktokv.com
+# 0.0.0.0 log-va.tiktokv.com
+# 0.0.0.0 mon.tiktokv.com
+# 0.0.0.0 mon-va.tiktokv.com
 
 # [tiltingpoint.io]
 0.0.0.0 registration.tiltingpoint.io
@@ -21289,7 +21289,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 facebook-ads.hara.vn
 0.0.0.0 google-ads.hara.vn
 0.0.0.0 stats.hara.vn
-0.0.0.0 tiktok-ads.hara.vn
+# 0.0.0.0 tiktok-ads.hara.vn
 #[starseed.fr]
 0.0.0.0 cdn.starseed.fr
 0.0.0.0 log.starseed.fr
@@ -23329,8 +23329,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 thyrolin.pl
 0.0.0.0 tigarshark.com
 0.0.0.0 tikoro.pl
-0.0.0.0 tiktokclaim.eu
-0.0.0.0 tiktokclaim.org
+# 0.0.0.0 tiktokclaim.eu
+# 0.0.0.0 tiktokclaim.org
 0.0.0.0 tilido.com
 0.0.0.0 timberlandwarszawa.com
 0.0.0.0 timum.shop
@@ -24620,8 +24620,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.thyrolin.pl
 0.0.0.0 www.tigarshark.com
 0.0.0.0 www.tikoro.pl
-0.0.0.0 www.tiktokclaim.eu
-0.0.0.0 www.tiktokclaim.org
+# 0.0.0.0 www.tiktokclaim.eu
+# 0.0.0.0 www.tiktokclaim.org
 0.0.0.0 www.tilido.com
 0.0.0.0 www.timberlandwarszawa.com
 0.0.0.0 www.timum.shop
@@ -39884,7 +39884,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 savesmart.click
 0.0.0.0 savesspigl.rest
 0.0.0.0 savethedgh.info
-0.0.0.0 savetiktokdl.com
+# 0.0.0.0 savetiktokdl.com
 0.0.0.0 savorandflavour.com
 0.0.0.0 savorystache.com
 0.0.0.0 savryn-pulseai-ai.com
@@ -59009,7 +59009,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.savesmart.click
 0.0.0.0 www.savesspigl.rest
 0.0.0.0 www.savethedgh.info
-0.0.0.0 www.savetiktokdl.com
+# 0.0.0.0 www.savetiktokdl.com
 0.0.0.0 www.savorandflavour.com
 0.0.0.0 www.savorystache.com
 0.0.0.0 www.savryn-pulseai-ai.com
@@ -64895,7 +64895,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 serwisinformacyjny.x9.eu
 0.0.0.0 sfakty.hukfi.com
 0.0.0.0 sklep.mariuszmroz.pl
-0.0.0.0 somi.tiktokclaim.eu
+# 0.0.0.0 somi.tiktokclaim.eu
 0.0.0.0 special-news.myfreesites.net
 0.0.0.0 spotlight.tourpariz.net
 0.0.0.0 sprawdzzdjecia.24.eu
@@ -65158,7 +65158,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.serwisinformacyjny.x9.eu
 0.0.0.0 www.sfakty.hukfi.com
 0.0.0.0 www.sklep.mariuszmroz.pl
-0.0.0.0 www.somi.tiktokclaim.eu
+# 0.0.0.0 www.somi.tiktokclaim.eu
 0.0.0.0 www.special-news.myfreesites.net
 0.0.0.0 www.spotlight.tourpariz.net
 0.0.0.0 www.sprawdzzdjecia.24.eu
@@ -86538,7 +86538,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 ads.syscdn.de
 0.0.0.0 ads.themovienation.com
 0.0.0.0 ads.thrillsaffiliates.com
-0.0.0.0 ads.tiktok.com
+# 0.0.0.0 ads.tiktok.com
 0.0.0.0 ads.todoti.com.br
 0.0.0.0 ads.toplayaffiliates.com
 0.0.0.0 ads.travelaudience.com
@@ -87755,8 +87755,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 maximiser.net
 0.0.0.0 mbs.megaroticlive.com
 0.0.0.0 mcdlks.com
-0.0.0.0 mcs-va.tiktok.com
-0.0.0.0 mcs-va.tiktokv.com
+# 0.0.0.0 mcs-va.tiktok.com
+# 0.0.0.0 mcs-va.tiktokv.com
 0.0.0.0 meadowlullaby.com
 0.0.0.0 measlymiddle.com
 0.0.0.0 measure.office.com
@@ -160514,7 +160514,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 tn.tikporn.tube
 0.0.0.0 v.tikporn.tube
 0.0.0.0 tiktits.com
-0.0.0.0 tiktok.pm
+# 0.0.0.0 tiktok.pm
 0.0.0.0 tiktok-pornhub.com
 0.0.0.0 asianpornstarmovie.tiktok-pornhub.com
 0.0.0.0 candice-michelle-porn.tiktok-pornhub.com
@@ -174529,417 +174529,417 @@ ff02::3 ip6-allhosts
 0.0.0.0 zh-tw.facebook.com
 
 # Instagram
-0.0.0.0 a.ns.cdninstagram.com
-0.0.0.0 api.instagram.com
-0.0.0.0 b.ns.cdninstagram.com
-0.0.0.0 badges.instagram.com
-0.0.0.0 black.ish.instagram.com
-0.0.0.0 business.instagram.com
-0.0.0.0 c.ns.cdninstagram.com
-0.0.0.0 cdninstagram.com
-0.0.0.0 creative.cdninstagram.com
-0.0.0.0 d.ns.cdninstagram.com
-0.0.0.0 dragon.cdninstagram.com
-0.0.0.0 engineering.instagram.com
-0.0.0.0 external-prg1-1.cdninstagram.com
-0.0.0.0 external-vie1-1.cdninstagram.com
-0.0.0.0 external-waw1-1.cdninstagram.com
-0.0.0.0 external.cdninstagram.com
-0.0.0.0 help.instagram.com
-0.0.0.0 i.instagram.com
-0.0.0.0 images.ak.instagram.com
-0.0.0.0 images.instagram.com
+# 0.0.0.0 a.ns.cdninstagram.com
+# 0.0.0.0 api.instagram.com
+# 0.0.0.0 b.ns.cdninstagram.com
+# 0.0.0.0 badges.instagram.com
+# 0.0.0.0 black.ish.instagram.com
+# 0.0.0.0 business.instagram.com
+# 0.0.0.0 c.ns.cdninstagram.com
+# 0.0.0.0 cdninstagram.com
+# 0.0.0.0 creative.cdninstagram.com
+# 0.0.0.0 d.ns.cdninstagram.com
+# 0.0.0.0 dragon.cdninstagram.com
+# 0.0.0.0 engineering.instagram.com
+# 0.0.0.0 external-prg1-1.cdninstagram.com
+# 0.0.0.0 external-vie1-1.cdninstagram.com
+# 0.0.0.0 external-waw1-1.cdninstagram.com
+# 0.0.0.0 external.cdninstagram.com
+# 0.0.0.0 help.instagram.com
+# 0.0.0.0 i.instagram.com
+# 0.0.0.0 images.ak.instagram.com
+# 0.0.0.0 images.instagram.com
 0.0.0.0 instagr.am
-0.0.0.0 instagram-shv-01-ams2.fbcdn.net
-0.0.0.0 instagram-shv-01-ams3.fbcdn.net
-0.0.0.0 instagram-shv-01-ash5.fbcdn.net
-0.0.0.0 instagram-shv-01-atl1.fbcdn.net
-0.0.0.0 instagram-shv-01-bru2.fbcdn.net
-0.0.0.0 instagram-shv-01-cai1.fbcdn.net
-0.0.0.0 instagram-shv-01-cdg2.fbcdn.net
-0.0.0.0 instagram-shv-01-dfw1.fbcdn.net
-0.0.0.0 instagram-shv-01-fra3.fbcdn.net
-0.0.0.0 instagram-shv-01-gru1.fbcdn.net
-0.0.0.0 instagram-shv-01-hkg2.fbcdn.net
-0.0.0.0 instagram-shv-01-iad3.fbcdn.net
-0.0.0.0 instagram-shv-01-kul1.fbcdn.net
-0.0.0.0 instagram-shv-01-lax1.fbcdn.net
-0.0.0.0 instagram-shv-01-lga1.fbcdn.net
-0.0.0.0 instagram-shv-01-lhr3.fbcdn.net
-0.0.0.0 instagram-shv-01-mad1.fbcdn.net
-0.0.0.0 instagram-shv-01-mia1.fbcdn.net
-0.0.0.0 instagram-shv-01-mxp1.fbcdn.net
-0.0.0.0 instagram-shv-01-nrt1.fbcdn.net
-0.0.0.0 instagram-shv-01-ord1.fbcdn.net
-0.0.0.0 instagram-shv-01-sea1.fbcdn.net
-0.0.0.0 instagram-shv-01-sin1.fbcdn.net
-0.0.0.0 instagram-shv-01-sjc2.fbcdn.net
-0.0.0.0 instagram-shv-01-syd1.fbcdn.net
-0.0.0.0 instagram-shv-01-tpe1.fbcdn.net
-0.0.0.0 instagram-shv-01-vie1.fbcdn.net
-0.0.0.0 instagram-shv-02-cai1.fbcdn.net
-0.0.0.0 instagram-shv-02-hkg2.fbcdn.net
-0.0.0.0 instagram-shv-03-ash5.fbcdn.net
-0.0.0.0 instagram-shv-03-atn1.fbcdn.net
-0.0.0.0 instagram-shv-03-hkg1.fbcdn.net
-0.0.0.0 instagram-shv-03-lla1.fbcdn.net
-0.0.0.0 instagram-shv-03-prn2.fbcdn.net
-0.0.0.0 instagram-shv-03-xdc1.fbcdn.net
-0.0.0.0 instagram-shv-04-hkg1.fbcdn.net
-0.0.0.0 instagram-shv-06-atn1.fbcdn.net
-0.0.0.0 instagram-shv-06-lla1.fbcdn.net
-0.0.0.0 instagram-shv-07-ash4.fbcdn.net
-0.0.0.0 instagram-shv-07-frc3.fbcdn.net
-0.0.0.0 instagram-shv-09-frc1.fbcdn.net
-0.0.0.0 instagram-shv-09-lla1.fbcdn.net
-0.0.0.0 instagram-shv-12-frc1.fbcdn.net
-0.0.0.0 instagram-shv-12-frc3.fbcdn.net
-0.0.0.0 instagram-shv-12-lla1.fbcdn.net
-0.0.0.0 instagram-shv-12-prn1.fbcdn.net
-0.0.0.0 instagram-shv-13-frc1.fbcdn.net
-0.0.0.0 instagram-shv-17-prn1.fbcdn.net
-0.0.0.0 instagram-shv-18-prn1.fbcdn.net
-0.0.0.0 instagram.c10r.facebook.com
-0.0.0.0 instagram.c10r.instagram.com
-0.0.0.0 instagram.co
-0.0.0.0 instagram.com
-0.0.0.0 instagram.com.br
-0.0.0.0 instagram.de
-0.0.0.0 instagram.fr
-0.0.0.0 instagram.net
-0.0.0.0 instagramstatic-a.akamaihd.net
-0.0.0.0 instagramstatic-a.akamaihd.net.edgesuite.net
-0.0.0.0 l.instagram.com
-0.0.0.0 logger.instagram.com
-0.0.0.0 openvpn.cdninstagram.com
-0.0.0.0 photos-a.ak.instagram.com
-0.0.0.0 photos-b.ak.instagram.com
-0.0.0.0 photos-d.ak.instagram.com
-0.0.0.0 photos-e.ak.instagram.com
-0.0.0.0 photos-f.ak.instagram.com
-0.0.0.0 photos-h.ak.instagram.com
-0.0.0.0 platform.cdninstagram.com
-0.0.0.0 platform.instagram.com
-0.0.0.0 scontent-a-ams.cdninstagram.com
-0.0.0.0 scontent-a-amt.cdninstagram.com
-0.0.0.0 scontent-a-arn.cdninstagram.com
-0.0.0.0 scontent-a-atl.cdninstagram.com
-0.0.0.0 scontent-a-bog.cdninstagram.com
-0.0.0.0 scontent-a-bru.cdninstagram.com
-0.0.0.0 scontent-a-cdg.cdninstagram.com
-0.0.0.0 scontent-a-dfw.cdninstagram.com
-0.0.0.0 scontent-a-eze.cdninstagram.com
-0.0.0.0 scontent-a-frt.cdninstagram.com
-0.0.0.0 scontent-a-frx.cdninstagram.com
-0.0.0.0 scontent-a-gru.cdninstagram.com
-0.0.0.0 scontent-a-hkg.cdninstagram.com
-0.0.0.0 scontent-a-iad.cdninstagram.com
-0.0.0.0 scontent-a-kut.cdninstagram.com
-0.0.0.0 scontent-a-lax.cdninstagram.com
-0.0.0.0 scontent-a-lga.cdninstagram.com
-0.0.0.0 scontent-a-lht.cdninstagram.com
-0.0.0.0 scontent-a-mad.cdninstagram.com
-0.0.0.0 scontent-a-mia.cdninstagram.com
-0.0.0.0 scontent-a-mrs.cdninstagram.com
-0.0.0.0 scontent-a-mxp.cdninstagram.com
-0.0.0.0 scontent-a-nrt.cdninstagram.com
-0.0.0.0 scontent-a-ort.cdninstagram.com
-0.0.0.0 scontent-a-otp.cdninstagram.com
-0.0.0.0 scontent-a-scl.cdninstagram.com
-0.0.0.0 scontent-a-sea.cdninstagram.com
-0.0.0.0 scontent-a-sin.cdninstagram.com
-0.0.0.0 scontent-a-sjc.cdninstagram.com
-0.0.0.0 scontent-a-sof.cdninstagram.com
-0.0.0.0 scontent-a-syd.cdninstagram.com
-0.0.0.0 scontent-a-tpe.cdninstagram.com
-0.0.0.0 scontent-a-vie.cdninstagram.com
-0.0.0.0 scontent-a-waw.cdninstagram.com
-0.0.0.0 scontent-a-yyz.cdninstagram.com
-0.0.0.0 scontent-a.cdninstagram.com
-0.0.0.0 scontent-ams.cdninstagram.com
-0.0.0.0 scontent-ams2-1.cdninstagram.com
-0.0.0.0 scontent-ams3-1.cdninstagram.com
-0.0.0.0 scontent-ams4-1.cdninstagram.com
-0.0.0.0 scontent-amt2-1.cdninstagram.com
-0.0.0.0 scontent-arn.cdninstagram.com
-0.0.0.0 scontent-arn2-1.cdninstagram.com
-0.0.0.0 scontent-arn2-2.cdninstagram.com
-0.0.0.0 scontent-atl.cdninstagram.com
-0.0.0.0 scontent-atl3-1.cdninstagram.com
-0.0.0.0 scontent-atl3-2.cdninstagram.com
-0.0.0.0 scontent-b-ams.cdninstagram.com
-0.0.0.0 scontent-b-amt.cdninstagram.com
-0.0.0.0 scontent-b-arn.cdninstagram.com
-0.0.0.0 scontent-b-atl.cdninstagram.com
-0.0.0.0 scontent-b-bog.cdninstagram.com
-0.0.0.0 scontent-b-bru.cdninstagram.com
-0.0.0.0 scontent-b-cdg.cdninstagram.com
-0.0.0.0 scontent-b-dfw.cdninstagram.com
-0.0.0.0 scontent-b-eze.cdninstagram.com
-0.0.0.0 scontent-b-frt.cdninstagram.com
-0.0.0.0 scontent-b-frx.cdninstagram.com
-0.0.0.0 scontent-b-gru.cdninstagram.com
-0.0.0.0 scontent-b-hkg.cdninstagram.com
-0.0.0.0 scontent-b-iad.cdninstagram.com
-0.0.0.0 scontent-b-icn.cdninstagram.com
-0.0.0.0 scontent-b-kut.cdninstagram.com
-0.0.0.0 scontent-b-lax.cdninstagram.com
-0.0.0.0 scontent-b-lga.cdninstagram.com
-0.0.0.0 scontent-b-lhr.cdninstagram.com
-0.0.0.0 scontent-b-lht.cdninstagram.com
-0.0.0.0 scontent-b-mad.cdninstagram.com
-0.0.0.0 scontent-b-mia.cdninstagram.com
-0.0.0.0 scontent-b-mrs.cdninstagram.com
-0.0.0.0 scontent-b-mxp.cdninstagram.com
-0.0.0.0 scontent-b-nrt.cdninstagram.com
-0.0.0.0 scontent-b-ord.cdninstagram.com
-0.0.0.0 scontent-b-ort.cdninstagram.com
-0.0.0.0 scontent-b-otp.cdninstagram.com
-0.0.0.0 scontent-b-pao.cdninstagram.com
-0.0.0.0 scontent-b-scl.cdninstagram.com
-0.0.0.0 scontent-b-sea.cdninstagram.com
-0.0.0.0 scontent-b-sin.cdninstagram.com
-0.0.0.0 scontent-b-sjc.cdninstagram.com
-0.0.0.0 scontent-b-sof.cdninstagram.com
-0.0.0.0 scontent-b-syd.cdninstagram.com
-0.0.0.0 scontent-b-tpe.cdninstagram.com
-0.0.0.0 scontent-b-vie.cdninstagram.com
-0.0.0.0 scontent-b-waw.cdninstagram.com
-0.0.0.0 scontent-b-yyz.cdninstagram.com
-0.0.0.0 scontent-b.cdninstagram.com
-0.0.0.0 scontent-ber1-1.cdninstagram.com
-0.0.0.0 scontent-bog1-1.cdninstagram.com
-0.0.0.0 scontent-bom1-1.cdninstagram.com
-0.0.0.0 scontent-bos3-1.cdninstagram.com
-0.0.0.0 scontent-bos5-1.cdninstagram.com
-0.0.0.0 scontent-bru.cdninstagram.com
-0.0.0.0 scontent-bru2-1.cdninstagram.com
-0.0.0.0 scontent-cai1-1.cdninstagram.com
-0.0.0.0 scontent-cdg.cdninstagram.com
-0.0.0.0 scontent-cdg2-1.cdninstagram.com
-0.0.0.0 scontent-cdg4-1.cdninstagram.com
-0.0.0.0 scontent-cdg4-2.cdninstagram.com
-0.0.0.0 scontent-cdg4-3.cdninstagram.com
-0.0.0.0 scontent-cdt.cdninstagram.com
-0.0.0.0 scontent-cdt1-1.cdninstagram.com
-0.0.0.0 scontent-cgk.cdninstagram.com
-0.0.0.0 scontent-cgk1-1.cdninstagram.com
-0.0.0.0 scontent-cph2-1.cdninstagram.com
-0.0.0.0 scontent-del1-1.cdninstagram.com
-0.0.0.0 scontent-den2-1.cdninstagram.com
-0.0.0.0 scontent-den4-1.cdninstagram.com
-0.0.0.0 scontent-dft4-1.cdninstagram.com
-0.0.0.0 scontent-dft4-2.cdninstagram.com
-0.0.0.0 scontent-dft4-3.cdninstagram.com
-0.0.0.0 scontent-dfw.cdninstagram.com
-0.0.0.0 scontent-dfw1-1.cdninstagram.com
-0.0.0.0 scontent-dfw5-1.cdninstagram.com
-0.0.0.0 scontent-dfw5-2.cdninstagram.com
-0.0.0.0 scontent-dub4-1.cdninstagram.com
-0.0.0.0 scontent-dus.cdninstagram.com
-0.0.0.0 scontent-dus1-1.cdninstagram.com
-0.0.0.0 scontent-eze1-1.cdninstagram.com
-0.0.0.0 scontent-fco1-1.cdninstagram.com
-0.0.0.0 scontent-fml1-1.cdninstagram.com
-0.0.0.0 scontent-fml2-1.cdninstagram.com
-0.0.0.0 scontent-for1-1.cdninstagram.com
-0.0.0.0 scontent-fra3-1.cdninstagram.com
-0.0.0.0 scontent-fra3-2.cdninstagram.com
-0.0.0.0 scontent-fra5-1.cdninstagram.com
-0.0.0.0 scontent-fra5-2.cdninstagram.com
-0.0.0.0 scontent-frt.cdninstagram.com
-0.0.0.0 scontent-frt3-1.cdninstagram.com
-0.0.0.0 scontent-frt3-2.cdninstagram.com
-0.0.0.0 scontent-frx.cdninstagram.com
-0.0.0.0 scontent-frx5-1.cdninstagram.com
-0.0.0.0 scontent-gig2-1.cdninstagram.com
-0.0.0.0 scontent-gmp1-1.cdninstagram.com
-0.0.0.0 scontent-gru.cdninstagram.com
-0.0.0.0 scontent-gru1-1.cdninstagram.com
-0.0.0.0 scontent-gru2-1.cdninstagram.com
-0.0.0.0 scontent-gru2-2.cdninstagram.com
-0.0.0.0 scontent-ham3-1.cdninstagram.com
-0.0.0.0 scontent-hbe1-1.cdninstagram.com
-0.0.0.0 scontent-hel2-1.cdninstagram.com
-0.0.0.0 scontent-hkg.cdninstagram.com
-0.0.0.0 scontent-hkg3-1.cdninstagram.com
-0.0.0.0 scontent-hkg3-2.cdninstagram.com
-0.0.0.0 scontent-hkt1-1.cdninstagram.com
-0.0.0.0 scontent-hou1-1.cdninstagram.com
-0.0.0.0 scontent-iad.cdninstagram.com
-0.0.0.0 scontent-iad3-1.cdninstagram.com
-0.0.0.0 scontent-iad3-2.cdninstagram.com
-0.0.0.0 scontent-icn1-1.cdninstagram.com
-0.0.0.0 scontent-itm1-1.cdninstagram.com
-0.0.0.0 scontent-jnb1-1.cdninstagram.com
-0.0.0.0 scontent-kul1-1.cdninstagram.com
-0.0.0.0 scontent-kut2-1.cdninstagram.com
-0.0.0.0 scontent-kut2-2.cdninstagram.com
-0.0.0.0 scontent-lax.cdninstagram.com
-0.0.0.0 scontent-lax3-1.cdninstagram.com
-0.0.0.0 scontent-lax3-2.cdninstagram.com
-0.0.0.0 scontent-lga.cdninstagram.com
-0.0.0.0 scontent-lga3-1.cdninstagram.com
-0.0.0.0 scontent-lga3-2.cdninstagram.com
-0.0.0.0 scontent-lhr.cdninstagram.com
-0.0.0.0 scontent-lhr3-1.cdninstagram.com
-0.0.0.0 scontent-lhr6-1.cdninstagram.com
-0.0.0.0 scontent-lhr6-2.cdninstagram.com
-0.0.0.0 scontent-lhr8-1.cdninstagram.com
-0.0.0.0 scontent-lhr8-2.cdninstagram.com
-0.0.0.0 scontent-lht6-1.cdninstagram.com
-0.0.0.0 scontent-lim1-1.cdninstagram.com
-0.0.0.0 scontent-lis1-1.cdninstagram.com
-0.0.0.0 scontent-maa2-1.cdninstagram.com
-0.0.0.0 scontent-maa2-2.cdninstagram.com
-0.0.0.0 scontent-mad.cdninstagram.com
-0.0.0.0 scontent-mad1-1.cdninstagram.com
-0.0.0.0 scontent-mba1-1.cdninstagram.com
-0.0.0.0 scontent-mia.cdninstagram.com
-0.0.0.0 scontent-mia1-1.cdninstagram.com
-0.0.0.0 scontent-mia1-2.cdninstagram.com
-0.0.0.0 scontent-mia3-1.cdninstagram.com
-0.0.0.0 scontent-mia3-2.cdninstagram.com
-0.0.0.0 scontent-mrs.cdninstagram.com
-0.0.0.0 scontent-mrs1-1.cdninstagram.com
-0.0.0.0 scontent-mrs2-1.cdninstagram.com
-0.0.0.0 scontent-mrs2-2.cdninstagram.com
-0.0.0.0 scontent-msp1-1.cdninstagram.com
-0.0.0.0 scontent-mxp.cdninstagram.com
-0.0.0.0 scontent-mxp1-1.cdninstagram.com
-0.0.0.0 scontent-nrt.cdninstagram.com
-0.0.0.0 scontent-nrt1-1.cdninstagram.com
-0.0.0.0 scontent-ord.cdninstagram.com
-0.0.0.0 scontent-ord1-1.cdninstagram.com
-0.0.0.0 scontent-ord5-1.cdninstagram.com
-0.0.0.0 scontent-ord5-2.cdninstagram.com
-0.0.0.0 scontent-ort2-1.cdninstagram.com
-0.0.0.0 scontent-ort2-2.cdninstagram.com
-0.0.0.0 scontent-otp1-1.cdninstagram.com
-0.0.0.0 scontent-prg1-1.cdninstagram.com
-0.0.0.0 scontent-qro1-1.cdninstagram.com
-0.0.0.0 scontent-scl1-1.cdninstagram.com
-0.0.0.0 scontent-scl2-1.cdninstagram.com
-0.0.0.0 scontent-sea.cdninstagram.com
-0.0.0.0 scontent-sea1-1.cdninstagram.com
-0.0.0.0 scontent-sin.cdninstagram.com
-0.0.0.0 scontent-sin2-1.cdninstagram.com
-0.0.0.0 scontent-sin2-2.cdninstagram.com
-0.0.0.0 scontent-sin6-1.cdninstagram.com
-0.0.0.0 scontent-sin6-2.cdninstagram.com
-0.0.0.0 scontent-sin9-1.cdninstagram.com
-0.0.0.0 scontent-sit4-1.cdninstagram.com
-0.0.0.0 scontent-sjc.cdninstagram.com
-0.0.0.0 scontent-sjc2-1.cdninstagram.com
-0.0.0.0 scontent-sjc3-1.cdninstagram.com
-0.0.0.0 scontent-sju1-1.cdninstagram.com
-0.0.0.0 scontent-sof.cdninstagram.com
-0.0.0.0 scontent-sof1-1.cdninstagram.com
-0.0.0.0 scontent-ssn1-1.cdninstagram.com
-0.0.0.0 scontent-syd2-1.cdninstagram.com
-0.0.0.0 scontent-tpe.cdninstagram.com
-0.0.0.0 scontent-tpe1-1.cdninstagram.com
-0.0.0.0 scontent-vie.cdninstagram.com
-0.0.0.0 scontent-vie1-1.cdninstagram.com
-0.0.0.0 scontent-waw1-1.cdninstagram.com
-0.0.0.0 scontent-xsp.cdninstagram.com
-0.0.0.0 scontent-xsp1-1.cdninstagram.com
-0.0.0.0 scontent-xsp1-2.cdninstagram.com
-0.0.0.0 scontent-yyz1-1.cdninstagram.com
-0.0.0.0 scontent-zrh1-1.cdninstagram.com
-0.0.0.0 scontent.cdninstagram.com
-0.0.0.0 static.cdninstagram.com
-0.0.0.0 telegraph-ash.instagram.com
-0.0.0.0 video-nrt1-1.cdninstagram.com
-0.0.0.0 video-ort2-1.cdninstagram.com
-0.0.0.0 video-ort2-2.cdninstagram.com
-0.0.0.0 video-prg1-1.cdninstagram.com
-0.0.0.0 video-vie1-1.cdninstagram.com
-0.0.0.0 video-waw1-1.cdninstagram.com
-0.0.0.0 video.cdninstagram.com
-0.0.0.0 white.ish.instagram.com
-0.0.0.0 www.cdninstagram.com
+# 0.0.0.0 instagram-shv-01-ams2.fbcdn.net
+# 0.0.0.0 instagram-shv-01-ams3.fbcdn.net
+# 0.0.0.0 instagram-shv-01-ash5.fbcdn.net
+# 0.0.0.0 instagram-shv-01-atl1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-bru2.fbcdn.net
+# 0.0.0.0 instagram-shv-01-cai1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-cdg2.fbcdn.net
+# 0.0.0.0 instagram-shv-01-dfw1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-fra3.fbcdn.net
+# 0.0.0.0 instagram-shv-01-gru1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-hkg2.fbcdn.net
+# 0.0.0.0 instagram-shv-01-iad3.fbcdn.net
+# 0.0.0.0 instagram-shv-01-kul1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-lax1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-lga1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-lhr3.fbcdn.net
+# 0.0.0.0 instagram-shv-01-mad1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-mia1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-mxp1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-nrt1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-ord1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-sea1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-sin1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-sjc2.fbcdn.net
+# 0.0.0.0 instagram-shv-01-syd1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-tpe1.fbcdn.net
+# 0.0.0.0 instagram-shv-01-vie1.fbcdn.net
+# 0.0.0.0 instagram-shv-02-cai1.fbcdn.net
+# 0.0.0.0 instagram-shv-02-hkg2.fbcdn.net
+# 0.0.0.0 instagram-shv-03-ash5.fbcdn.net
+# 0.0.0.0 instagram-shv-03-atn1.fbcdn.net
+# 0.0.0.0 instagram-shv-03-hkg1.fbcdn.net
+# 0.0.0.0 instagram-shv-03-lla1.fbcdn.net
+# 0.0.0.0 instagram-shv-03-prn2.fbcdn.net
+# 0.0.0.0 instagram-shv-03-xdc1.fbcdn.net
+# 0.0.0.0 instagram-shv-04-hkg1.fbcdn.net
+# 0.0.0.0 instagram-shv-06-atn1.fbcdn.net
+# 0.0.0.0 instagram-shv-06-lla1.fbcdn.net
+# 0.0.0.0 instagram-shv-07-ash4.fbcdn.net
+# 0.0.0.0 instagram-shv-07-frc3.fbcdn.net
+# 0.0.0.0 instagram-shv-09-frc1.fbcdn.net
+# 0.0.0.0 instagram-shv-09-lla1.fbcdn.net
+# 0.0.0.0 instagram-shv-12-frc1.fbcdn.net
+# 0.0.0.0 instagram-shv-12-frc3.fbcdn.net
+# 0.0.0.0 instagram-shv-12-lla1.fbcdn.net
+# 0.0.0.0 instagram-shv-12-prn1.fbcdn.net
+# 0.0.0.0 instagram-shv-13-frc1.fbcdn.net
+# 0.0.0.0 instagram-shv-17-prn1.fbcdn.net
+# 0.0.0.0 instagram-shv-18-prn1.fbcdn.net
+# 0.0.0.0 instagram.c10r.facebook.com
+# 0.0.0.0 instagram.c10r.instagram.com
+# 0.0.0.0 instagram.co
+# 0.0.0.0 instagram.com
+# 0.0.0.0 instagram.com.br
+# 0.0.0.0 instagram.de
+# 0.0.0.0 instagram.fr
+# 0.0.0.0 instagram.net
+# 0.0.0.0 instagramstatic-a.akamaihd.net
+# 0.0.0.0 instagramstatic-a.akamaihd.net.edgesuite.net
+# 0.0.0.0 l.instagram.com
+# 0.0.0.0 logger.instagram.com
+# 0.0.0.0 openvpn.cdninstagram.com
+# 0.0.0.0 photos-a.ak.instagram.com
+# 0.0.0.0 photos-b.ak.instagram.com
+# 0.0.0.0 photos-d.ak.instagram.com
+# 0.0.0.0 photos-e.ak.instagram.com
+# 0.0.0.0 photos-f.ak.instagram.com
+# 0.0.0.0 photos-h.ak.instagram.com
+# 0.0.0.0 platform.cdninstagram.com
+# 0.0.0.0 platform.instagram.com
+# 0.0.0.0 scontent-a-ams.cdninstagram.com
+# 0.0.0.0 scontent-a-amt.cdninstagram.com
+# 0.0.0.0 scontent-a-arn.cdninstagram.com
+# 0.0.0.0 scontent-a-atl.cdninstagram.com
+# 0.0.0.0 scontent-a-bog.cdninstagram.com
+# 0.0.0.0 scontent-a-bru.cdninstagram.com
+# 0.0.0.0 scontent-a-cdg.cdninstagram.com
+# 0.0.0.0 scontent-a-dfw.cdninstagram.com
+# 0.0.0.0 scontent-a-eze.cdninstagram.com
+# 0.0.0.0 scontent-a-frt.cdninstagram.com
+# 0.0.0.0 scontent-a-frx.cdninstagram.com
+# 0.0.0.0 scontent-a-gru.cdninstagram.com
+# 0.0.0.0 scontent-a-hkg.cdninstagram.com
+# 0.0.0.0 scontent-a-iad.cdninstagram.com
+# 0.0.0.0 scontent-a-kut.cdninstagram.com
+# 0.0.0.0 scontent-a-lax.cdninstagram.com
+# 0.0.0.0 scontent-a-lga.cdninstagram.com
+# 0.0.0.0 scontent-a-lht.cdninstagram.com
+# 0.0.0.0 scontent-a-mad.cdninstagram.com
+# 0.0.0.0 scontent-a-mia.cdninstagram.com
+# 0.0.0.0 scontent-a-mrs.cdninstagram.com
+# 0.0.0.0 scontent-a-mxp.cdninstagram.com
+# 0.0.0.0 scontent-a-nrt.cdninstagram.com
+# 0.0.0.0 scontent-a-ort.cdninstagram.com
+# 0.0.0.0 scontent-a-otp.cdninstagram.com
+# 0.0.0.0 scontent-a-scl.cdninstagram.com
+# 0.0.0.0 scontent-a-sea.cdninstagram.com
+# 0.0.0.0 scontent-a-sin.cdninstagram.com
+# 0.0.0.0 scontent-a-sjc.cdninstagram.com
+# 0.0.0.0 scontent-a-sof.cdninstagram.com
+# 0.0.0.0 scontent-a-syd.cdninstagram.com
+# 0.0.0.0 scontent-a-tpe.cdninstagram.com
+# 0.0.0.0 scontent-a-vie.cdninstagram.com
+# 0.0.0.0 scontent-a-waw.cdninstagram.com
+# 0.0.0.0 scontent-a-yyz.cdninstagram.com
+# 0.0.0.0 scontent-a.cdninstagram.com
+# 0.0.0.0 scontent-ams.cdninstagram.com
+# 0.0.0.0 scontent-ams2-1.cdninstagram.com
+# 0.0.0.0 scontent-ams3-1.cdninstagram.com
+# 0.0.0.0 scontent-ams4-1.cdninstagram.com
+# 0.0.0.0 scontent-amt2-1.cdninstagram.com
+# 0.0.0.0 scontent-arn.cdninstagram.com
+# 0.0.0.0 scontent-arn2-1.cdninstagram.com
+# 0.0.0.0 scontent-arn2-2.cdninstagram.com
+# 0.0.0.0 scontent-atl.cdninstagram.com
+# 0.0.0.0 scontent-atl3-1.cdninstagram.com
+# 0.0.0.0 scontent-atl3-2.cdninstagram.com
+# 0.0.0.0 scontent-b-ams.cdninstagram.com
+# 0.0.0.0 scontent-b-amt.cdninstagram.com
+# 0.0.0.0 scontent-b-arn.cdninstagram.com
+# 0.0.0.0 scontent-b-atl.cdninstagram.com
+# 0.0.0.0 scontent-b-bog.cdninstagram.com
+# 0.0.0.0 scontent-b-bru.cdninstagram.com
+# 0.0.0.0 scontent-b-cdg.cdninstagram.com
+# 0.0.0.0 scontent-b-dfw.cdninstagram.com
+# 0.0.0.0 scontent-b-eze.cdninstagram.com
+# 0.0.0.0 scontent-b-frt.cdninstagram.com
+# 0.0.0.0 scontent-b-frx.cdninstagram.com
+# 0.0.0.0 scontent-b-gru.cdninstagram.com
+# 0.0.0.0 scontent-b-hkg.cdninstagram.com
+# 0.0.0.0 scontent-b-iad.cdninstagram.com
+# 0.0.0.0 scontent-b-icn.cdninstagram.com
+# 0.0.0.0 scontent-b-kut.cdninstagram.com
+# 0.0.0.0 scontent-b-lax.cdninstagram.com
+# 0.0.0.0 scontent-b-lga.cdninstagram.com
+# 0.0.0.0 scontent-b-lhr.cdninstagram.com
+# 0.0.0.0 scontent-b-lht.cdninstagram.com
+# 0.0.0.0 scontent-b-mad.cdninstagram.com
+# 0.0.0.0 scontent-b-mia.cdninstagram.com
+# 0.0.0.0 scontent-b-mrs.cdninstagram.com
+# 0.0.0.0 scontent-b-mxp.cdninstagram.com
+# 0.0.0.0 scontent-b-nrt.cdninstagram.com
+# 0.0.0.0 scontent-b-ord.cdninstagram.com
+# 0.0.0.0 scontent-b-ort.cdninstagram.com
+# 0.0.0.0 scontent-b-otp.cdninstagram.com
+# 0.0.0.0 scontent-b-pao.cdninstagram.com
+# 0.0.0.0 scontent-b-scl.cdninstagram.com
+# 0.0.0.0 scontent-b-sea.cdninstagram.com
+# 0.0.0.0 scontent-b-sin.cdninstagram.com
+# 0.0.0.0 scontent-b-sjc.cdninstagram.com
+# 0.0.0.0 scontent-b-sof.cdninstagram.com
+# 0.0.0.0 scontent-b-syd.cdninstagram.com
+# 0.0.0.0 scontent-b-tpe.cdninstagram.com
+# 0.0.0.0 scontent-b-vie.cdninstagram.com
+# 0.0.0.0 scontent-b-waw.cdninstagram.com
+# 0.0.0.0 scontent-b-yyz.cdninstagram.com
+# 0.0.0.0 scontent-b.cdninstagram.com
+# 0.0.0.0 scontent-ber1-1.cdninstagram.com
+# 0.0.0.0 scontent-bog1-1.cdninstagram.com
+# 0.0.0.0 scontent-bom1-1.cdninstagram.com
+# 0.0.0.0 scontent-bos3-1.cdninstagram.com
+# 0.0.0.0 scontent-bos5-1.cdninstagram.com
+# 0.0.0.0 scontent-bru.cdninstagram.com
+# 0.0.0.0 scontent-bru2-1.cdninstagram.com
+# 0.0.0.0 scontent-cai1-1.cdninstagram.com
+# 0.0.0.0 scontent-cdg.cdninstagram.com
+# 0.0.0.0 scontent-cdg2-1.cdninstagram.com
+# 0.0.0.0 scontent-cdg4-1.cdninstagram.com
+# 0.0.0.0 scontent-cdg4-2.cdninstagram.com
+# 0.0.0.0 scontent-cdg4-3.cdninstagram.com
+# 0.0.0.0 scontent-cdt.cdninstagram.com
+# 0.0.0.0 scontent-cdt1-1.cdninstagram.com
+# 0.0.0.0 scontent-cgk.cdninstagram.com
+# 0.0.0.0 scontent-cgk1-1.cdninstagram.com
+# 0.0.0.0 scontent-cph2-1.cdninstagram.com
+# 0.0.0.0 scontent-del1-1.cdninstagram.com
+# 0.0.0.0 scontent-den2-1.cdninstagram.com
+# 0.0.0.0 scontent-den4-1.cdninstagram.com
+# 0.0.0.0 scontent-dft4-1.cdninstagram.com
+# 0.0.0.0 scontent-dft4-2.cdninstagram.com
+# 0.0.0.0 scontent-dft4-3.cdninstagram.com
+# 0.0.0.0 scontent-dfw.cdninstagram.com
+# 0.0.0.0 scontent-dfw1-1.cdninstagram.com
+# 0.0.0.0 scontent-dfw5-1.cdninstagram.com
+# 0.0.0.0 scontent-dfw5-2.cdninstagram.com
+# 0.0.0.0 scontent-dub4-1.cdninstagram.com
+# 0.0.0.0 scontent-dus.cdninstagram.com
+# 0.0.0.0 scontent-dus1-1.cdninstagram.com
+# 0.0.0.0 scontent-eze1-1.cdninstagram.com
+# 0.0.0.0 scontent-fco1-1.cdninstagram.com
+# 0.0.0.0 scontent-fml1-1.cdninstagram.com
+# 0.0.0.0 scontent-fml2-1.cdninstagram.com
+# 0.0.0.0 scontent-for1-1.cdninstagram.com
+# 0.0.0.0 scontent-fra3-1.cdninstagram.com
+# 0.0.0.0 scontent-fra3-2.cdninstagram.com
+# 0.0.0.0 scontent-fra5-1.cdninstagram.com
+# 0.0.0.0 scontent-fra5-2.cdninstagram.com
+# 0.0.0.0 scontent-frt.cdninstagram.com
+# 0.0.0.0 scontent-frt3-1.cdninstagram.com
+# 0.0.0.0 scontent-frt3-2.cdninstagram.com
+# 0.0.0.0 scontent-frx.cdninstagram.com
+# 0.0.0.0 scontent-frx5-1.cdninstagram.com
+# 0.0.0.0 scontent-gig2-1.cdninstagram.com
+# 0.0.0.0 scontent-gmp1-1.cdninstagram.com
+# 0.0.0.0 scontent-gru.cdninstagram.com
+# 0.0.0.0 scontent-gru1-1.cdninstagram.com
+# 0.0.0.0 scontent-gru2-1.cdninstagram.com
+# 0.0.0.0 scontent-gru2-2.cdninstagram.com
+# 0.0.0.0 scontent-ham3-1.cdninstagram.com
+# 0.0.0.0 scontent-hbe1-1.cdninstagram.com
+# 0.0.0.0 scontent-hel2-1.cdninstagram.com
+# 0.0.0.0 scontent-hkg.cdninstagram.com
+# 0.0.0.0 scontent-hkg3-1.cdninstagram.com
+# 0.0.0.0 scontent-hkg3-2.cdninstagram.com
+# 0.0.0.0 scontent-hkt1-1.cdninstagram.com
+# 0.0.0.0 scontent-hou1-1.cdninstagram.com
+# 0.0.0.0 scontent-iad.cdninstagram.com
+# 0.0.0.0 scontent-iad3-1.cdninstagram.com
+# 0.0.0.0 scontent-iad3-2.cdninstagram.com
+# 0.0.0.0 scontent-icn1-1.cdninstagram.com
+# 0.0.0.0 scontent-itm1-1.cdninstagram.com
+# 0.0.0.0 scontent-jnb1-1.cdninstagram.com
+# 0.0.0.0 scontent-kul1-1.cdninstagram.com
+# 0.0.0.0 scontent-kut2-1.cdninstagram.com
+# 0.0.0.0 scontent-kut2-2.cdninstagram.com
+# 0.0.0.0 scontent-lax.cdninstagram.com
+# 0.0.0.0 scontent-lax3-1.cdninstagram.com
+# 0.0.0.0 scontent-lax3-2.cdninstagram.com
+# 0.0.0.0 scontent-lga.cdninstagram.com
+# 0.0.0.0 scontent-lga3-1.cdninstagram.com
+# 0.0.0.0 scontent-lga3-2.cdninstagram.com
+# 0.0.0.0 scontent-lhr.cdninstagram.com
+# 0.0.0.0 scontent-lhr3-1.cdninstagram.com
+# 0.0.0.0 scontent-lhr6-1.cdninstagram.com
+# 0.0.0.0 scontent-lhr6-2.cdninstagram.com
+# 0.0.0.0 scontent-lhr8-1.cdninstagram.com
+# 0.0.0.0 scontent-lhr8-2.cdninstagram.com
+# 0.0.0.0 scontent-lht6-1.cdninstagram.com
+# 0.0.0.0 scontent-lim1-1.cdninstagram.com
+# 0.0.0.0 scontent-lis1-1.cdninstagram.com
+# 0.0.0.0 scontent-maa2-1.cdninstagram.com
+# 0.0.0.0 scontent-maa2-2.cdninstagram.com
+# 0.0.0.0 scontent-mad.cdninstagram.com
+# 0.0.0.0 scontent-mad1-1.cdninstagram.com
+# 0.0.0.0 scontent-mba1-1.cdninstagram.com
+# 0.0.0.0 scontent-mia.cdninstagram.com
+# 0.0.0.0 scontent-mia1-1.cdninstagram.com
+# 0.0.0.0 scontent-mia1-2.cdninstagram.com
+# 0.0.0.0 scontent-mia3-1.cdninstagram.com
+# 0.0.0.0 scontent-mia3-2.cdninstagram.com
+# 0.0.0.0 scontent-mrs.cdninstagram.com
+# 0.0.0.0 scontent-mrs1-1.cdninstagram.com
+# 0.0.0.0 scontent-mrs2-1.cdninstagram.com
+# 0.0.0.0 scontent-mrs2-2.cdninstagram.com
+# 0.0.0.0 scontent-msp1-1.cdninstagram.com
+# 0.0.0.0 scontent-mxp.cdninstagram.com
+# 0.0.0.0 scontent-mxp1-1.cdninstagram.com
+# 0.0.0.0 scontent-nrt.cdninstagram.com
+# 0.0.0.0 scontent-nrt1-1.cdninstagram.com
+# 0.0.0.0 scontent-ord.cdninstagram.com
+# 0.0.0.0 scontent-ord1-1.cdninstagram.com
+# 0.0.0.0 scontent-ord5-1.cdninstagram.com
+# 0.0.0.0 scontent-ord5-2.cdninstagram.com
+# 0.0.0.0 scontent-ort2-1.cdninstagram.com
+# 0.0.0.0 scontent-ort2-2.cdninstagram.com
+# 0.0.0.0 scontent-otp1-1.cdninstagram.com
+# 0.0.0.0 scontent-prg1-1.cdninstagram.com
+# 0.0.0.0 scontent-qro1-1.cdninstagram.com
+# 0.0.0.0 scontent-scl1-1.cdninstagram.com
+# 0.0.0.0 scontent-scl2-1.cdninstagram.com
+# 0.0.0.0 scontent-sea.cdninstagram.com
+# 0.0.0.0 scontent-sea1-1.cdninstagram.com
+# 0.0.0.0 scontent-sin.cdninstagram.com
+# 0.0.0.0 scontent-sin2-1.cdninstagram.com
+# 0.0.0.0 scontent-sin2-2.cdninstagram.com
+# 0.0.0.0 scontent-sin6-1.cdninstagram.com
+# 0.0.0.0 scontent-sin6-2.cdninstagram.com
+# 0.0.0.0 scontent-sin9-1.cdninstagram.com
+# 0.0.0.0 scontent-sit4-1.cdninstagram.com
+# 0.0.0.0 scontent-sjc.cdninstagram.com
+# 0.0.0.0 scontent-sjc2-1.cdninstagram.com
+# 0.0.0.0 scontent-sjc3-1.cdninstagram.com
+# 0.0.0.0 scontent-sju1-1.cdninstagram.com
+# 0.0.0.0 scontent-sof.cdninstagram.com
+# 0.0.0.0 scontent-sof1-1.cdninstagram.com
+# 0.0.0.0 scontent-ssn1-1.cdninstagram.com
+# 0.0.0.0 scontent-syd2-1.cdninstagram.com
+# 0.0.0.0 scontent-tpe.cdninstagram.com
+# 0.0.0.0 scontent-tpe1-1.cdninstagram.com
+# 0.0.0.0 scontent-vie.cdninstagram.com
+# 0.0.0.0 scontent-vie1-1.cdninstagram.com
+# 0.0.0.0 scontent-waw1-1.cdninstagram.com
+# 0.0.0.0 scontent-xsp.cdninstagram.com
+# 0.0.0.0 scontent-xsp1-1.cdninstagram.com
+# 0.0.0.0 scontent-xsp1-2.cdninstagram.com
+# 0.0.0.0 scontent-yyz1-1.cdninstagram.com
+# 0.0.0.0 scontent-zrh1-1.cdninstagram.com
+# 0.0.0.0 scontent.cdninstagram.com
+# 0.0.0.0 static.cdninstagram.com
+# 0.0.0.0 telegraph-ash.instagram.com
+# 0.0.0.0 video-nrt1-1.cdninstagram.com
+# 0.0.0.0 video-ort2-1.cdninstagram.com
+# 0.0.0.0 video-ort2-2.cdninstagram.com
+# 0.0.0.0 video-prg1-1.cdninstagram.com
+# 0.0.0.0 video-vie1-1.cdninstagram.com
+# 0.0.0.0 video-waw1-1.cdninstagram.com
+# 0.0.0.0 video.cdninstagram.com
+# 0.0.0.0 white.ish.instagram.com
+# 0.0.0.0 www.cdninstagram.com
 0.0.0.0 www.instagr.am
-0.0.0.0 www.instagram.com
-0.0.0.0 z-p15-scontent-bru2-1.cdninstagram.com
-0.0.0.0 z-p15-scontent-cdg2-1.cdninstagram.com
-0.0.0.0 z-p15-scontent-cdt1-1.cdninstagram.com
-0.0.0.0 z-p15-scontent-lhr3-1.cdninstagram.com
-0.0.0.0 z-p15-scontent-lht6-1.cdninstagram.com
-0.0.0.0 z-p15-scontent.cdninstagram.com
-0.0.0.0 z-p4-scontent-ams3-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-ams4-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-amt2-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-arn2-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-arn2-2.cdninstagram.com
-0.0.0.0 z-p4-scontent-bru2-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-cdg2-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-cdt1-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-dfw5-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-frt3-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-frt3-2.cdninstagram.com
-0.0.0.0 z-p4-scontent-frx5-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-lax3-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-lga3-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-lhr3-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-lht6-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-mrs1-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-mxp1-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-otp1-1.cdninstagram.com
-0.0.0.0 z-p4-scontent-waw1-1.cdninstagram.com
-0.0.0.0 z-p4-scontent.cdninstagram.com
-0.0.0.0 z-p42-scontent-ams3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-amt2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-arn2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-arn2-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-atl3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-ber1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-bom1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-bom1-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-bru2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-cdg2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-cdt1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-dfw5-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-dfw5-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-dub4-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-dus1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-frt3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-frt3-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-frx5-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-hbe1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-hkg3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-iad3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-icn1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-jnb1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-lax3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-lax3-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-lga3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-lhr3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-lht6-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-los2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-mad1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-mia3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-mia3-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-mrs1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-msp1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-mxp1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-nrt1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-ort2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-ort2-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-sea1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-sin2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-sin2-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-sin6-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-sin6-2.cdninstagram.com
-0.0.0.0 z-p42-scontent-sjc3-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-sof1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-syd2-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-vie1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-waw1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent-yyz1-1.cdninstagram.com
-0.0.0.0 z-p42-scontent.cdninstagram.com
-0.0.0.0 z-p42-static.cdninstagram.com
-0.0.0.0 scontent.fallback.cdninstagram.com
+# 0.0.0.0 www.instagram.com
+# 0.0.0.0 z-p15-scontent-bru2-1.cdninstagram.com
+# 0.0.0.0 z-p15-scontent-cdg2-1.cdninstagram.com
+# 0.0.0.0 z-p15-scontent-cdt1-1.cdninstagram.com
+# 0.0.0.0 z-p15-scontent-lhr3-1.cdninstagram.com
+# 0.0.0.0 z-p15-scontent-lht6-1.cdninstagram.com
+# 0.0.0.0 z-p15-scontent.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-ams3-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-ams4-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-amt2-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-arn2-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-arn2-2.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-bru2-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-cdg2-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-cdt1-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-dfw5-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-frt3-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-frt3-2.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-frx5-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-lax3-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-lga3-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-lhr3-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-lht6-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-mrs1-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-mxp1-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-otp1-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent-waw1-1.cdninstagram.com
+# 0.0.0.0 z-p4-scontent.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-ams3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-amt2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-arn2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-arn2-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-atl3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-ber1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-bom1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-bom1-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-bru2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-cdg2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-cdt1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-dfw5-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-dfw5-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-dub4-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-dus1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-frt3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-frt3-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-frx5-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-hbe1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-hkg3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-iad3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-icn1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-jnb1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-lax3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-lax3-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-lga3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-lhr3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-lht6-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-los2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-mad1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-mia3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-mia3-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-mrs1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-msp1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-mxp1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-nrt1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-ort2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-ort2-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sea1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sin2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sin2-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sin6-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sin6-2.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sjc3-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-sof1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-syd2-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-vie1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-waw1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent-yyz1-1.cdninstagram.com
+# 0.0.0.0 z-p42-scontent.cdninstagram.com
+# 0.0.0.0 z-p42-static.cdninstagram.com
+# 0.0.0.0 scontent.fallback.cdninstagram.com
 
 # Threads
 0.0.0.0 threads.net
@@ -175547,41 +175547,41 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.redditstatic.com
 
 # TikTok
-0.0.0.0 abtest-sg-tiktok.byteoversea.com
-0.0.0.0 abtest-va-tiktok.byteoversea.com
-0.0.0.0 api.tiktokv.com
-0.0.0.0 api16.tiktokv.com
-0.0.0.0 applog.tiktokv.com
+# 0.0.0.0 abtest-sg-tiktok.byteoversea.com
+# 0.0.0.0 abtest-va-tiktok.byteoversea.com
+# 0.0.0.0 api.tiktokv.com
+# 0.0.0.0 api16.tiktokv.com
+# 0.0.0.0 applog.tiktokv.com
 0.0.0.0 byteglb.com
 0.0.0.0 dm-maliva16.byteoversea.com
 0.0.0.0 dm.bytedance.com
-0.0.0.0 dm16-alisg.tiktokv.com
-0.0.0.0 dm16-useast1a.tiktokv.com
-0.0.0.0 dm16-useast2a.tiktokv.com
-0.0.0.0 dm16-va.tiktokv.com
-0.0.0.0 dm16.tiktokv.com
-0.0.0.0 frontier-va.tiktokv.com
-0.0.0.0 frontier.tiktokv.com
-0.0.0.0 gecko-sg.tiktokv.com
-0.0.0.0 gecko-va.tiktokv.com
-0.0.0.0 gecko-va.tiktokv.com.edgesuite.net
-0.0.0.0 gecko16-normal-c-useast1a.tiktokv.com
-0.0.0.0 gecko16-normal-c-useast2a.tiktokv.com
+# 0.0.0.0 dm16-alisg.tiktokv.com
+# 0.0.0.0 dm16-useast1a.tiktokv.com
+# 0.0.0.0 dm16-useast2a.tiktokv.com
+# 0.0.0.0 dm16-va.tiktokv.com
+# 0.0.0.0 dm16.tiktokv.com
+# 0.0.0.0 frontier-va.tiktokv.com
+# 0.0.0.0 frontier.tiktokv.com
+# 0.0.0.0 gecko-sg.tiktokv.com
+# 0.0.0.0 gecko-va.tiktokv.com
+# 0.0.0.0 gecko-va.tiktokv.com.edgesuite.net
+# 0.0.0.0 gecko16-normal-c-useast1a.tiktokv.com
+# 0.0.0.0 gecko16-normal-c-useast2a.tiktokv.com
 0.0.0.0 gts.byteoversea.net
-0.0.0.0 ib.tiktokv.com
+# 0.0.0.0 ib.tiktokv.com
 0.0.0.0 ibytedtos.com
 0.0.0.0 isnssdk.com
-0.0.0.0 jsb-va.tiktokv.com
+# 0.0.0.0 jsb-va.tiktokv.com
 0.0.0.0 lf1-ttcdn-tos.pstatp.com
-0.0.0.0 log-va.tiktokv.com.edgekey.net
-0.0.0.0 log.tiktokv.com
-0.0.0.0 log.tiktokv.com.edgesuite.net
-0.0.0.0 log16-normal-c-useast1a.tiktokv.com
-0.0.0.0 log16-normal-c-useast2a.tiktokv.com
-0.0.0.0 mcs-sg.tiktokv.com
-0.0.0.0 mcs-va-useast2a.tiktokv.com
-0.0.0.0 mon-va.tiktokv.com.edgesuite.net
-0.0.0.0 mon.tiktokv.com.edgesuite.net
+# 0.0.0.0 log-va.tiktokv.com.edgekey.net
+# 0.0.0.0 log.tiktokv.com
+# 0.0.0.0 log.tiktokv.com.edgesuite.net
+# 0.0.0.0 log16-normal-c-useast1a.tiktokv.com
+# 0.0.0.0 log16-normal-c-useast2a.tiktokv.com
+# 0.0.0.0 mcs-sg.tiktokv.com
+# 0.0.0.0 mcs-va-useast2a.tiktokv.com
+# 0.0.0.0 mon-va.tiktokv.com.edgesuite.net
+# 0.0.0.0 mon.tiktokv.com.edgesuite.net
 0.0.0.0 muscdn.com
 0.0.0.0 musemuse.cn
 0.0.0.0 musical.ly
@@ -175589,24 +175589,24 @@ ff02::3 ip6-allhosts
 0.0.0.0 p1-tt-ipv6.byteimg.com
 0.0.0.0 p1-tt.byteimg.com
 0.0.0.0 p16-ad-sg.ibyteimg.com
-0.0.0.0 p16-pu-sign-ie.tiktokcdn-eu.com
-0.0.0.0 p16-sign-sg.tiktokcdn.com
-0.0.0.0 p16-sign-va.tiktokcdn.com
-0.0.0.0 p16-sign.tiktokcdn-us.com
-0.0.0.0 p16-tiktok-sg.ibyteimg.com
-0.0.0.0 p16-tiktok-sign-va-h2.ibyteimg.com
-0.0.0.0 p16-tiktok-va-h2.ibyteimg.com
-0.0.0.0 p16-tiktok-va.ibyteimg.com
-0.0.0.0 p16-tiktokcdn-com.akamaized.net
-0.0.0.0 p16-va-tiktok.ibyteimg.com
+# 0.0.0.0 p16-pu-sign-ie.tiktokcdn-eu.com
+# 0.0.0.0 p16-sign-sg.tiktokcdn.com
+# 0.0.0.0 p16-sign-va.tiktokcdn.com
+# 0.0.0.0 p16-sign.tiktokcdn-us.com
+# 0.0.0.0 p16-tiktok-sg.ibyteimg.com
+# 0.0.0.0 p16-tiktok-sign-va-h2.ibyteimg.com
+# 0.0.0.0 p16-tiktok-va-h2.ibyteimg.com
+# 0.0.0.0 p16-tiktok-va.ibyteimg.com
+# 0.0.0.0 p16-tiktokcdn-com.akamaized.net
+# 0.0.0.0 p16-va-tiktok.ibyteimg.com
 0.0.0.0 p16.hypstarcdn.com
-0.0.0.0 p16.tiktokcdn-us.com
-0.0.0.0 p19-pu-ie.tiktokcdn-eu.com
-0.0.0.0 p19-sign.tiktokcdn-us.com
+# 0.0.0.0 p16.tiktokcdn-us.com
+# 0.0.0.0 p19-pu-ie.tiktokcdn-eu.com
+# 0.0.0.0 p19-sign.tiktokcdn-us.com
 0.0.0.0 p26-tt.byteimg.com
 0.0.0.0 p3-tt-ipv6.byteimg.com
-0.0.0.0 p77-va.tiktokcdn.com
-0.0.0.0 p77-webcast.tiktokcdn.com
+# 0.0.0.0 p77-va.tiktokcdn.com
+# 0.0.0.0 p77-webcast.tiktokcdn.com
 0.0.0.0 p9-tt.byteimg.com
 0.0.0.0 pull-f3-hs.pstatp.com
 0.0.0.0 pull-f5-hs.flive.pstatp.com
@@ -175624,62 +175624,62 @@ ff02::3 ip6-allhosts
 0.0.0.0 pull-rtmp-l1-hs.pstatp.com
 0.0.0.0 pull-rtmp-l1-mus.pstatp.com
 0.0.0.0 pull-rtmp-l6-hs.pstatp.com
-0.0.0.0 quic-tiktok-core-proxy-i18n-gcpva.byteoversea.net
-0.0.0.0 quic-tiktok-proxy-i18n-gcpva.byteoversea.net
-0.0.0.0 rtlog.tiktokv.com
-0.0.0.0 s16.tiktokcdn.com
-0.0.0.0 s20.tiktokcdn.com
-0.0.0.0 search16-normal-useast2a.tiktokv.com
-0.0.0.0 sdfp-va.tiktokv.com
+# 0.0.0.0 quic-tiktok-core-proxy-i18n-gcpva.byteoversea.net
+# 0.0.0.0 quic-tiktok-proxy-i18n-gcpva.byteoversea.net
+# 0.0.0.0 rtlog.tiktokv.com
+# 0.0.0.0 s16.tiktokcdn.com
+# 0.0.0.0 s20.tiktokcdn.com
+# 0.0.0.0 search16-normal-useast2a.tiktokv.com
+# 0.0.0.0 sdfp-va.tiktokv.com
 0.0.0.0 sf-tb-sg.ibytedtos.com
 0.0.0.0 sf1-ttcdn-tos.pstatp.com
 0.0.0.0 sf16-ttcdn-tos.ipstatp.com
-0.0.0.0 sf53-sg.tiktokcdn.com
-0.0.0.0 sf53-va.tiktokcdn.com
+# 0.0.0.0 sf53-sg.tiktokcdn.com
+# 0.0.0.0 sf53-va.tiktokcdn.com
 0.0.0.0 sf6-ttcdn-tos.pstatp.com
-0.0.0.0 sf77-sg.tiktokcdn.com
-0.0.0.0 sf77-va.tiktokcdn.com
-0.0.0.0 sf77-webcast.tiktokcdn.com
+# 0.0.0.0 sf77-sg.tiktokcdn.com
+# 0.0.0.0 sf77-va.tiktokcdn.com
+# 0.0.0.0 sf77-webcast.tiktokcdn.com
 0.0.0.0 sgali3.l.byteoversea.net
 0.0.0.0 sgsnssdk.com
-0.0.0.0 test-ads.tiktok.com
-0.0.0.0 tiktok-lb-alisg.byteoversea.net
-0.0.0.0 tiktok-lb-maliva.byteoversea.net
-0.0.0.0 tiktok-lb-texas.useast5.byteoversea.net.byteigtm.com
-0.0.0.0 tiktok-platform-lb-alisg.byteoversea.net
-0.0.0.0 tiktok-platform-lb-maliva.byteoversea.net
-0.0.0.0 tiktok.com
-0.0.0.0 tiktok.in
-0.0.0.0 tiktok.org
-0.0.0.0 tiktokcdn-com.akamaized.net
-0.0.0.0 tiktokcdn-eu.com
-0.0.0.0 tiktokcdn-eu.net
-0.0.0.0 tiktokcdn-in.com
-0.0.0.0 tiktokcdn-us.com
-0.0.0.0 tiktokcdn-us.com.atomile.com
-0.0.0.0 tiktokcdn-us.com.c.worldfcdn2.com
-0.0.0.0 tiktokcdn.com
-0.0.0.0 tiktokcdn.com.atomile.com
-0.0.0.0 tiktokcdn.com.c.bytefcdn-oversea.com
-0.0.0.0 tiktokcdn.com.c.bytefcdn-ttpeu.com
-0.0.0.0 tiktokcdn.com.c.bytetcdn.com
-0.0.0.0 tiktokcdn.com.c.worldfcdn.com
-0.0.0.0 tiktokcdn.com.qlivecdn.com
-0.0.0.0 tiktokcdn.com.rocket-cdn.com
-0.0.0.0 tiktokcdn.com.tlivepush.com
-0.0.0.0 tiktokd.org
-0.0.0.0 tiktokglobalshop.com
-0.0.0.0 tiktokglobalshopv.com
-0.0.0.0 tiktokmusic.app
-0.0.0.0 tiktokshop.com
-0.0.0.0 tiktokstaticb.com
-0.0.0.0 tiktokv.com
-0.0.0.0 tiktokv.com.c.bytefcdn-oversea.com
-0.0.0.0 tiktokv.com.c.worldfcdn.com
-0.0.0.0 tiktokv.com.c.worldfcdn2.com
-0.0.0.0 tiktokv.eu
-0.0.0.0 tiktokv.us
-0.0.0.0 tiktokw.us
+# 0.0.0.0 test-ads.tiktok.com
+# 0.0.0.0 tiktok-lb-alisg.byteoversea.net
+# 0.0.0.0 tiktok-lb-maliva.byteoversea.net
+# 0.0.0.0 tiktok-lb-texas.useast5.byteoversea.net.byteigtm.com
+# 0.0.0.0 tiktok-platform-lb-alisg.byteoversea.net
+# 0.0.0.0 tiktok-platform-lb-maliva.byteoversea.net
+# 0.0.0.0 tiktok.com
+# 0.0.0.0 tiktok.in
+# 0.0.0.0 tiktok.org
+# 0.0.0.0 tiktokcdn-com.akamaized.net
+# 0.0.0.0 tiktokcdn-eu.com
+# 0.0.0.0 tiktokcdn-eu.net
+# 0.0.0.0 tiktokcdn-in.com
+# 0.0.0.0 tiktokcdn-us.com
+# 0.0.0.0 tiktokcdn-us.com.atomile.com
+# 0.0.0.0 tiktokcdn-us.com.c.worldfcdn2.com
+# 0.0.0.0 tiktokcdn.com
+# 0.0.0.0 tiktokcdn.com.atomile.com
+# 0.0.0.0 tiktokcdn.com.c.bytefcdn-oversea.com
+# 0.0.0.0 tiktokcdn.com.c.bytefcdn-ttpeu.com
+# 0.0.0.0 tiktokcdn.com.c.bytetcdn.com
+# 0.0.0.0 tiktokcdn.com.c.worldfcdn.com
+# 0.0.0.0 tiktokcdn.com.qlivecdn.com
+# 0.0.0.0 tiktokcdn.com.rocket-cdn.com
+# 0.0.0.0 tiktokcdn.com.tlivepush.com
+# 0.0.0.0 tiktokd.org
+# 0.0.0.0 tiktokglobalshop.com
+# 0.0.0.0 tiktokglobalshopv.com
+# 0.0.0.0 tiktokmusic.app
+# 0.0.0.0 tiktokshop.com
+# 0.0.0.0 tiktokstaticb.com
+# 0.0.0.0 tiktokv.com
+# 0.0.0.0 tiktokv.com.c.bytefcdn-oversea.com
+# 0.0.0.0 tiktokv.com.c.worldfcdn.com
+# 0.0.0.0 tiktokv.com.c.worldfcdn2.com
+# 0.0.0.0 tiktokv.eu
+# 0.0.0.0 tiktokv.us
+# 0.0.0.0 tiktokw.us
 0.0.0.0 tlivecdn.com
 0.0.0.0 ttapis.com
 0.0.0.0 ttdns2.com
@@ -175689,24 +175689,24 @@ ff02::3 ip6-allhosts
 0.0.0.0 ttoversea.net
 0.0.0.0 ttoverseaus.net
 0.0.0.0 ttwstatic.com
-0.0.0.0 v16-tiktokcdn-com.akamaized.net
-0.0.0.0 v16m.tiktokcdn-eu.com
-0.0.0.0 v19.tiktokcdn.com
-0.0.0.0 v39.tiktokcdn-eu.com
-0.0.0.0 v51.tiktokcdn.com
-0.0.0.0 v53.tiktokcdn.com
-0.0.0.0 v58.tiktokcdn-eu.com
-0.0.0.0 v77.tiktokcdn.com
+# 0.0.0.0 v16-tiktokcdn-com.akamaized.net
+# 0.0.0.0 v16m.tiktokcdn-eu.com
+# 0.0.0.0 v19.tiktokcdn.com
+# 0.0.0.0 v39.tiktokcdn-eu.com
+# 0.0.0.0 v51.tiktokcdn.com
+# 0.0.0.0 v53.tiktokcdn.com
+# 0.0.0.0 v58.tiktokcdn-eu.com
+# 0.0.0.0 v77.tiktokcdn.com
 0.0.0.0 verification-va.byteoversea.com
-0.0.0.0 verification-va.tiktokv.com
-0.0.0.0 webcast16-normal-c-useast2a.tiktokv.com
+# 0.0.0.0 verification-va.tiktokv.com
+# 0.0.0.0 webcast16-normal-c-useast2a.tiktokv.com
 0.0.0.0 www.musical.ly
-0.0.0.0 www.tiktok.com
-0.0.0.0 www.tiktok.in
+# 0.0.0.0 www.tiktok.com
+# 0.0.0.0 www.tiktok.in
 0.0.0.0 xlog-va.byteoversea.com
-0.0.0.0 xlog-va.tiktokv.com
-0.0.0.0 xlog.tiktokv.com
-0.0.0.0 xlog.tiktokv.com.edgesuite.net
+# 0.0.0.0 xlog-va.tiktokv.com
+# 0.0.0.0 xlog.tiktokv.com
+# 0.0.0.0 xlog.tiktokv.com.edgesuite.net
 
 # DateMeme
 0.0.0.0 datememe.com
