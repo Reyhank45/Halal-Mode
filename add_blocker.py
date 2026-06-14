@@ -452,6 +452,15 @@ Examples:
         bumped_version = bump_project_version()
         if bumped_version:
             print(f"✅ New module version: {bumped_version}")
+            print("\nRunning make clean && make...")
+            try:
+                base_dir = Path(__file__).parent.resolve()
+                subprocess.run(['make', 'clean'], cwd=base_dir, check=True)
+                subprocess.run(['make'], cwd=base_dir, check=True)
+                print("✅ Successfully built project.")
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Build failed: {e}")
+                sys.exit(1)
 
 
 if __name__ == '__main__':

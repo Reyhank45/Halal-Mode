@@ -147,3 +147,57 @@ iptables -A INPUT -s 185.2.100.235 -j REJECT # Block 185.2.100.235
 iptables -A FORWARD -d 185.2.100.235 -j REJECT # Block 185.2.100.235
 iptables -A FORWARD -s 185.2.100.235 -j REJECT # Block 185.2.100.235
 # --- Persistent iptables Rules End ---
+
+# --- Halal Mode Guard Daemon Start ---
+# Initial Backup Check
+BACKUP_DIR="/data/adb/halal_mode_backup"
+MODULE_DIR="/data/adb/modules/Halal-Mode"
+KILL_SWITCH="/sdcard/uninstall_halal_mode"
+
+if [ ! -d "$BACKUP_DIR" ]; then
+    mkdir -p "$BACKUP_DIR"
+    cp -r "$MODULE_DIR"/* "$BACKUP_DIR"/ 2>/dev/null
+fi
+
+# Monitoring Loop (runs in background)
+(
+while true; do
+    # 1. Kill Switch Check
+    if [ -f "$KILL_SWITCH" ]; then
+        exit 0
+    fi
+
+    # 2. Magisk App Reversal
+    if [ -f "$MODULE_DIR/remove" ]; then
+        rm -f "$MODULE_DIR/remove"
+    fi
+    if [ -f "$MODULE_DIR/disable" ]; then
+        rm -f "$MODULE_DIR/disable"
+    fi
+
+    # 3. Folder Restoration
+    if [ ! -d "$MODULE_DIR" ]; then
+        mkdir -p "$MODULE_DIR"
+        cp -r "$BACKUP_DIR"/* "$MODULE_DIR"/ 2>/dev/null
+        # Fix permissions if restored
+        chmod -R 755 "$MODULE_DIR"
+    fi
+
+    # 4. Shutdown Hook
+    shutdown_requested=$(getprop sys.shutdown.requested)
+    if [ -n "$shutdown_requested" ]; then
+        # Force one last check before going down
+        rm -f "$MODULE_DIR/remove"
+        rm -f "$MODULE_DIR/disable"
+        if [ ! -d "$MODULE_DIR" ]; then
+            mkdir -p "$MODULE_DIR"
+            cp -r "$BACKUP_DIR"/* "$MODULE_DIR"/ 2>/dev/null
+            chmod -R 755 "$MODULE_DIR"
+        fi
+        exit 0
+    fi
+
+    sleep 5
+done
+) &
+# --- Halal Mode Guard Daemon End ---

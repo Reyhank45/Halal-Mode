@@ -12,24 +12,44 @@ rm -rf $TMP_DIR
 mkdir -p $TMP_DIR
 
 echo "Downloading updated files from GitHub main branch..."
-HOSTS_URL="https://raw.githubusercontent.com/Reyhank45/Halal-Mode/main/system/etc/hosts?t=$RANDOM"
-SERVICE_URL="https://raw.githubusercontent.com/Reyhank45/Halal-Mode/main/common/service.sh?t=$RANDOM"
 
-curl -sL "$HOSTS_URL" -o $TMP_DIR/hosts || wget -qO $TMP_DIR/hosts "$HOSTS_URL"
-curl -sL "$SERVICE_URL" -o $TMP_DIR/service.sh || wget -qO $TMP_DIR/service.sh "$SERVICE_URL"
+FILES="
+system/etc/hosts
+common/service.sh
+common/scripts/add_block.sh
+version
+module.prop
+update.json
+action.sh
+add_blocker.py
+"
 
-if [ ! -s "$TMP_DIR/hosts" ] || [ ! -s "$TMP_DIR/service.sh" ]; then
-    echo "Failed to download the update."
+BASE_URL="https://raw.githubusercontent.com/Reyhank45/Halal-Mode/main"
+SUCCESS=true
+
+for file in $FILES; do
+    echo "Downloading $file..."
+    mkdir -p "$TMP_DIR/$(dirname "$file")"
+    URL="$BASE_URL/$file?t=$RANDOM"
+    curl -sL "$URL" -o "$TMP_DIR/$file" || wget -qO "$TMP_DIR/$file" "$URL"
+    
+    if [ ! -s "$TMP_DIR/$file" ]; then
+        echo "Failed to download $file"
+        SUCCESS=false
+    fi
+done
+
+if [ "$SUCCESS" != true ]; then
+    echo "Failed to download some update files."
     rm -rf $TMP_DIR
     exit 1
 fi
 
 echo "Installing update..."
-mkdir -p $MODPATH/system/etc
-mkdir -p $MODPATH/common
-
-cp -f $TMP_DIR/hosts $MODPATH/system/etc/hosts
-cp -f $TMP_DIR/service.sh $MODPATH/common/service.sh
+for file in $FILES; do
+    mkdir -p "$MODPATH/$(dirname "$file")"
+    cp -f "$TMP_DIR/$file" "$MODPATH/$file"
+done
 
 # Fix permissions
 chown -R 0:0 $MODPATH
