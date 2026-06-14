@@ -11,33 +11,25 @@ echo "Starting standalone update process..."
 rm -rf $TMP_DIR
 mkdir -p $TMP_DIR
 
-echo "Downloading latest source from GitHub main branch..."
-ZIP_FILE=$TMP_DIR/main.zip
-URL="https://github.com/Reyhank45/Halal-Mode/archive/refs/heads/main.zip?t=$RANDOM"
+echo "Downloading updated files from GitHub main branch..."
+HOSTS_URL="https://raw.githubusercontent.com/Reyhank45/Halal-Mode/main/system/etc/hosts?t=$RANDOM"
+SERVICE_URL="https://raw.githubusercontent.com/Reyhank45/Halal-Mode/main/common/service.sh?t=$RANDOM"
 
-curl -sL "$URL" -o $ZIP_FILE || wget -qO $ZIP_FILE "$URL"
+curl -sL "$HOSTS_URL" -o $TMP_DIR/hosts || wget -qO $TMP_DIR/hosts "$HOSTS_URL"
+curl -sL "$SERVICE_URL" -o $TMP_DIR/service.sh || wget -qO $TMP_DIR/service.sh "$SERVICE_URL"
 
-if [ ! -f "$ZIP_FILE" ] || [ ! -s "$ZIP_FILE" ]; then
+if [ ! -s "$TMP_DIR/hosts" ] || [ ! -s "$TMP_DIR/service.sh" ]; then
     echo "Failed to download the update."
     rm -rf $TMP_DIR
     exit 1
 fi
 
-echo "Extracting update..."
-# unzip is standard in Android's toybox/busybox
-unzip -qo $ZIP_FILE -d $TMP_DIR
-
-if [ ! -d "$TMP_DIR/Halal-Mode-main" ]; then
-    echo "Failed to extract or unexpected directory structure."
-    rm -rf $TMP_DIR
-    exit 1
-fi
-
 echo "Installing update..."
-cd $TMP_DIR/Halal-Mode-main
+mkdir -p $MODPATH/system/etc
+mkdir -p $MODPATH/common
 
-# Copy relevant module files directly to MODPATH
-cp -rf system common META-INF module.prop config.sh action.sh $MODPATH/
+cp -f $TMP_DIR/hosts $MODPATH/system/etc/hosts
+cp -f $TMP_DIR/service.sh $MODPATH/common/service.sh
 
 # Fix permissions
 chown -R 0:0 $MODPATH
