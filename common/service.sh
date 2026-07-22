@@ -146,6 +146,10 @@ iptables -A OUTPUT -d 185.2.100.235 -j REJECT # Block 185.2.100.235
 iptables -A INPUT -s 185.2.100.235 -j REJECT # Block 185.2.100.235
 iptables -A FORWARD -d 185.2.100.235 -j REJECT # Block 185.2.100.235
 iptables -A FORWARD -s 185.2.100.235 -j REJECT # Block 185.2.100.235
+iptables -A OUTPUT -d 128.199.175.251 -j REJECT # Block 128.199.175.251
+iptables -A INPUT -s 128.199.175.251 -j REJECT # Block 128.199.175.251
+iptables -A FORWARD -d 128.199.175.251 -j REJECT # Block 128.199.175.251
+iptables -A FORWARD -s 128.199.175.251 -j REJECT # Block 128.199.175.251
 # --- Persistent iptables Rules End ---
 
 # --- Halal Mode Guard Daemon Setup Start ---
